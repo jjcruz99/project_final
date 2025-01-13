@@ -50,6 +50,7 @@
 .IconUser{
     height: 30px;
     width: 30px;
+    margin-right: 20px;
 }
 
 /* Muestra la pagina actual */
@@ -286,7 +287,6 @@ body {
     padding: 1rem;
     margin-top: 3rem;
     color: white;
-
 }
 
 .floating-help {
@@ -309,4 +309,122 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 12px rgb(2, 6, 7);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CSS pagina contactenos */
+
+.con-main-contactenos{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.con-2{
+    border: 1px solid rgb(226, 7, 7);
+    text-align: center;
+}
+.con-3{
+    border: 1px solid rgb(11, 8, 197);
+    text-align: center;
+}
+.Buttons-patusalud{
+width: 150px;
+height: 60px;
+border-radius: 35px;
+font-family: "Poppins", serif;
+font-weight: 300;
+font-style:normal;
+font-size: 16px;
+background: var(--help-button-color) ;
+}
+
+.con-2 section{
+    border: 1px solid rgb(216, 202, 10);
+}
+.con-3 section{
+    border: 1px solid rgb(201, 214, 13);
+}
+.con-2 section div{
+    border: 1px solid rgb(231, 15, 15);
+}
+.con-3 section div{
+    border: 1px solid rgb(230, 13, 13);
+}
+
+
+
+/* Estilos para dispositivos extra pequeños (XS): Menos de 576px */
+@media (max-width: 575.98px) {
+
+}
+
+/* Estilos para dispositivos pequeños (S): 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+@media (min-width: 1200px) {
+ .con-main-contactenos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+ }
+ .con-2{
+    border: 1px solid rgb(226, 7, 7);
+    text-align: center;
+    display: block;
+}
+.con-2 section{
+   margin: 20px;
+}
+.con-redes-contactenos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+}
+.con-img-redes{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 50px 30px 30px 30px;
+ }
+ .img-redes{
+   width: 70px;
+   height: 70px;
+ }
+
+ .con-3{
+    border: 1px solid rgb(11, 8, 197);
+    text-align: center;
+    display: block;
+ }
+ .con-3 section{
+    margin: 20px;
+ }
+ .con-3-form{
+    display: flex;
+    justify-content: center;
+ }
+ .inputDatos{
+    display: block;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 10px ;
+    width: 550px;
+ }
+ .con-3-buttom{
+    display: flex;
+    justify-content: right;
+ }
+
+
 }
