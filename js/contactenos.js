@@ -12,4 +12,4 @@ document.getElementById('form-contactenos').addEventListener('submit', function(
         event.preventDefault();
         alert('Por favor, complete todos los campos del formulario.');
     }
-});
+}); 

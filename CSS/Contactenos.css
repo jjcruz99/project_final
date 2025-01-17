@@ -502,7 +502,7 @@ opacity: 5;
     }
 }
 
-/* Estilos para dispositivos grandes (L): 992px a 1199px */
+/* Estilos para dispositivos grandes (L): 992px a 1199px */ 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .con-main-contactenos{
         display: flex;
