@@ -1,4 +1,5 @@
 /* ///// Clases poppins */
+
 .poppins-thin {
     font-family: "Poppins", serif;
     font-weight: 50;
@@ -12,154 +13,24 @@
     font-size: 26px;
 }
 
-/* MENÚ DE NAVEGACIÓN*/
-.navBarra {
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    background-color: #AF6894;
-    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
-
-.navBarra div {
-    align-items: center;
-    display: flex;
-    margin-right: 20px;
-}
-
-.logo {
-    height: 80px;
-    width: 80px;
-    border-radius: 10px;
-    margin: 1px;
-    padding: 5px;
-}
-
-.aBarra {
-    color: rgb(255, 255, 255);
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.IconUser {
-    height: 30px;
-    width: 30px;
-}
-
-/* Cambia el color cuando se pasa el puntero */
-.aBarra:hover {
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: #B08EA2;
-}
-
-.IconUser:hover {
-    background-color: #AF6894;
-    border-radius: 7px;
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background-color: #ffffff;
-    color:#333333;
-    line-height: 1.5;
-}
-
-/* Navigation */
-.nav-bar {
-    background-color: #AF6894;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    height: 60px;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    transition:  #AF6894 0.3s ease;
-}
-
-
-.nav-link.active {
-    background-color: var(--text-color);
-}
-
-.user-icon {
-    height: 40px;
-    cursor: pointer;
-}
-
-/* Main Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-/* opcion de seleccionar en la barra de navegacion */
-.aBarra.optionSelect {
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: #AF6894;
-    font-weight: 600;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-/* linea actualizacion carpeta selector*/
-.aBarra.optionSelect::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 125px;
-    height: 15px;
-    background-color: #ffffff;
-    border-radius: 0%;
-}
 
 /* Titulos */
+
 .section-title {
-    color:#af6894;
+    color: #af6894;
     margin-bottom: 1.5rem;
     font-size: 2.0rem;
     text-align: center
-    
 }
 
+
 /* Acerca de nosotros */
+
 .about-section {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 2rem;
-    box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-container {
@@ -170,7 +41,7 @@ body {
     padding: 5.5rem;
     text-align: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px 0px 0px 0px ;
+    margin: 10px 0px 0px 0px;
 }
 
 .about-overlay {
@@ -206,7 +77,9 @@ body {
     color: white;
 }
 
+
 /* Nuestro equipo */
+
 .team-section {
     padding: 2rem;
     margin: 2rem auto;
@@ -275,13 +148,15 @@ body {
     transform: scale(1.0);
 }
 
+
 /* Nuestro Proposito*/
+
 .purpose-section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    align-items: center; 
+    align-items: center;
     margin: 10px;
 }
 
@@ -289,7 +164,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-    
 }
 
 .purpose-item {
@@ -298,13 +172,16 @@ body {
     color: #222d35;
 }
 
+
 /* Nuestro Impacto */
+
 .impact-section {
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 1.5rem;
-    border-radius:10px;;
+    border-radius: 10px;
+    ;
     text-align: center;
-    margin: 10px 0px 10px 0px ;
+    margin: 10px 0px 10px 0px;
 }
 
 .impact-photo {
@@ -313,18 +190,24 @@ body {
     margin-bottom: 1rem;
 }
 
+
 /* Testimonios */
+
 .testimonials-section {
     padding: 1.5rem;
-    border-radius: 10px;;
-    box-shadow:0 2px 8px rgba(0, 0, 0, 0.1);;
+    border-radius: 10px;
+    ;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    ;
     text-align: center;
 }
 
+
 /* stilos en testimonios*/
+
 .testimonials-section {
     padding: 2rem;
-    background-color:#90acba5d;
+    background-color: #90acba5d;
     border-radius: 10px;
 }
 
@@ -340,7 +223,6 @@ body {
     transition: transform 0.5s ease;
     gap: 2rem;
     padding: 1rem;
-    
 }
 
 .testimonial-card {
@@ -349,7 +231,6 @@ body {
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 4px 15px #90ACBA;
-    
 }
 
 .testimonial-header {
@@ -361,9 +242,9 @@ body {
 
 .testimonial-info h3 {
     margin: 0;
-    color:#647E92;
+    color: #647E92;
     font-size: 1.0rem;
-    text-align:center;
+    text-align: center;
 }
 
 .rating {
@@ -376,9 +257,11 @@ body {
     color: #666;
     line-height: 1.6;
     text-align: center;
-    
 }
+
+
 /* flechas del carrusel testimonio*/
+
 .testimonial-control {
     position: absolute;
     top: 50%;
@@ -401,7 +284,9 @@ body {
     right: 0.5px;
 }
 
+
 /* Footer */
+
 .footer {
     background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
     padding: 2rem;
@@ -447,12 +332,13 @@ body {
     text-align: right;
     padding-left: 2rem;
     border-left: 1px solid rgba(255, 255, 255, 0.2);
-     margin-top: 3rem;
+    margin-top: 3rem;
     color: white;
 }
 
 
 /* Bonton de ayuda */
+
 .floating-help {
     position: fixed;
     bottom: 2rem;
@@ -484,13 +370,14 @@ body {
     width: 20px;
     height: 20px;
 }
+
+
 /* paginas donde se va activar la carpetica */
+
 .about,
 .services,
 .products,
 .contact,
-
-
 .about.active,
 .services.active,
 .products.active,
@@ -501,77 +388,79 @@ body {
 
 
 /* Estilos para dispositivos extra pequeños (XS): Menos de 576px */
+
 @media (max-width: 575.98px) {
     .team-grid {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
     }
     .navBarra {
-        display : grid;
+        display: grid;
         grid-template-columns: 2fr 1fr;
     }
-    .navBarra div{
-        display : grid;
-        grid-template-columns:2fr 1fr;
+    .navBarra div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
     .footer-content {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
     }
     .purpose-grid {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
-      }
-
+    }
 }
-    
+
+
 /* Estilos para dispositivos pequeños (S): 576px a 767px */
+
 @media (min-width: 576px) and (max-width: 767.98px) {
     .team-grid {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
     }
     .navBarra {
-        display : grid;
+        display: grid;
         grid-template-columns: 2fr 1fr;
     }
-    .navBarra div{
-        display : grid;
-        grid-template-columns:2fr 1fr;
+    .navBarra div {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
     .footer-content {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
     }
     .purpose-grid {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
-      }
-
-
+    }
 }
 
+
 /* Estilos para dispositivos medianos (M): 768px a 991px */
+
 @media (min-width: 768px) and (max-width: 991.98px) {
     .team-grid {
-        display : flex;
+        display: flex;
         flex-wrap: wrap;
     }
     .navBarra {
-        display : flex;
+        display: flex;
     }
-    .navBarra div{
-        display :flex;
+    .navBarra div {
+        display: flex;
         justify-content: center;
     }
 }
 
-/* Estilos para dispositivos grandes (L): 992px a 1199px */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    
 
-  
-}
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
 
 /* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+
 @media (min-width: 1200px) {}

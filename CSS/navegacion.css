@@ -1,0 +1,117 @@
+/* MENÚ DE NAVEGACIÓN */
+
+.navBarra {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #AF6894;
+    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navBarra div {
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.logo {
+    height: auto;
+    width: 80px;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 5px;
+}
+
+.aBarra {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.IconUser {
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Cambia el color cuando se pasa el puntero */
+
+.aBarra:hover {
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #B08EA2;
+}
+
+.IconUser:hover {
+    transform: scale(1.3);
+}
+
+
+/* Navigation */
+
+.nav-bar {
+    background-color: #AF6894;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: #AF6894 0.3s ease;
+}
+
+
+/* Opción de seleccionar en la barra de navegación */
+
+.aBarra.optionSelect {
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #AF6894;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Linea de actualización carpeta selector */
+
+.navbar-toggler:hover {
+    transform: scale(1.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        border: none;
+        background-color: transparent;
+    }
+    /* Los enlaces del menú se agrupan en una columna */
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    /* Hacemos el menú y el toggle más grandes */
+    .nav-link {
+        font-size: 18px;
+    }
+}

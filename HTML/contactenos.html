@@ -1,98 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Contactenos.css">
+    <link rel="stylesheet" href="../CSS/navegacion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <title>PatuSalud</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Barra de Navegación -->
-    <nav class="navBarra">
-      <div class="nav-brand">
-        <img src="../Pictures/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
-      </div>
-      <div class="nav-toggle" id="navToggle"></div>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="aBarra">Inicio</a>
-        <a href="servicios.html" class="aBarra">Servicios</a>
-        <a href="productos.html" class="aBarra">Productos</a>
-        <a href="nosotros.html" class="aBarra ">Conócenos</a>
-        <a href="pagos.html" class="aBarra">Pagos</a>
-        <a href="contactanos.html" class="aBarra optionSelect">Contáctanos</a>
-        <img src="../Pictures/user (1).png" alt="Icono de Usuario" class="IconUser">
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navBarra fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Pictures/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link aBarra">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="nav-link aBarra">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link aBarra">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link aBarra">Conócenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pagos.html" class="nav-link aBarra">Pagos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactanos.html" class="nav-link aBarra optionSelect">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="container-boton">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+                <a href="#" class="navbar-brand">
+                    <img src="../Pictures/user (1).png" alt="Icono de Usuario" class="IconUser">
+                </a>
+            </div>
+        </div>
+
+
+    </nav>>
     <!-- Sección "contactenos" -->
     <main class="con-main-contactenos">
-      <article class="con-2">
-        <section>
-          <h2 class="titulos">Contáctenos</h2>
-        </section>
-        <section>
-          <p>Da el siguiente paso hacia tu bienestar y agenda tu cita hoy mismo!</p>
-        </section>
-        <section class="con-info-contacto">
-              <div>
-                <img src="../Pictures/img_contactenos/teléfono-90.png" alt="telefono" class="iconos-contacto">
-                <p>313-256-3695</p>
-              </div>
-              <div>
-                <img src="../Pictures/img_contactenos/correo-90.png" alt="email" class="iconos-contacto">
-                <p>saludpatu814@gmail.com</p>
-              </div>
-              <div>
-                <img src="../Pictures/img_contactenos/ubicación-90.png" alt="ubicacion" class="iconos-contacto">
-                <p>Medellín, Colombia</p>
-              </div>
-        </section>
-        <section class="con-redes-contactenos">
-          <div>
-            <p>Siguenos</p>
-            <div class="con-img-redes">
-              <img src="../Pictures/img_contactenos/facebook.png" class="img-redes" alt="facebook">
-              <img src="../Pictures/img_contactenos/email.png" class="img-redes" alt="email">
-              <img src="../Pictures/img_contactenos/instagram.png" class="img-redes" alt="instagram">
-              <img src="../Pictures/img_contactenos/whatsapp.png" class="img-redes" alt="whatsapp">
-            </div>
-          </div>
-        </section> 
-      </article>
-      <article class="con-3">
-        <section>
-          <h2 class="titulos" id="titulo-formulario">Formulario</h2>
-        </section>
-        <section class="con-3-form">
-          <form action="https://formspree.io/f/mzzzqbwq" method="POST" id="form-contactenos">
-            <input type="text" name="name" id="nombre" placeholder="  Nombre" class="inputDatos">
-            <input type="text" name="name" number id="apellido" placeholder="  Apellido" class="inputDatos">
-            <input type="number" name="number" id="celular" placeholder="  Celular" class="inputDatos">
-            <input type="email" name="email" id="email" placeholder="  Escribe tu correo" class="inputDatos">
-            <textarea name="message" id="mensaje" placeholder="  Escribe tus comentarios" rows="5" cols="32" class="inputDatos"></textarea>
-            <section class="con-3-buttom">
-              <button type="submit" id="button-enviar" class="Buttons-patusalud"> Enviar </button>
+        <article class="con-2">
+            <section>
+                <h2 class="titulos">Contáctenos</h2>
             </section>
-          </form>
-        </section>
-      </article>
+            <section>
+                <p>Da el siguiente paso hacia tu bienestar y agenda tu cita hoy mismo!</p>
+            </section>
+            <section class="con-info-contacto">
+                <div>
+                    <img src="../Pictures/img_contactenos/teléfono-90.png" alt="telefono" class="iconos-contacto">
+                    <p>313-256-3695</p>
+                </div>
+                <div>
+                    <img src="../Pictures/img_contactenos/correo-90.png" alt="email" class="iconos-contacto">
+                    <p>saludpatu814@gmail.com</p>
+                </div>
+                <div>
+                    <img src="../Pictures/img_contactenos/ubicación-90.png" alt="ubicacion" class="iconos-contacto">
+                    <p>Medellín, Colombia</p>
+                </div>
+            </section>
+            <section class="con-redes-contactenos">
+                <div>
+                    <p>Siguenos</p>
+                    <div class="con-img-redes">
+                        <img src="../Pictures/img_contactenos/facebook.png" class="img-redes" alt="facebook">
+                        <img src="../Pictures/img_contactenos/email.png" class="img-redes" alt="email">
+                        <img src="../Pictures/img_contactenos/instagram.png" class="img-redes" alt="instagram">
+                        <img src="../Pictures/img_contactenos/whatsapp.png" class="img-redes" alt="whatsapp">
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="con-3">
+            <section>
+                <h2 class="titulos" id="titulo-formulario">Formulario</h2>
+            </section>
+            <section class="con-3-form">
+                <form action="https://formspree.io/f/mzzzqbwq" method="POST" id="form-contactenos">
+                    <input type="text" name="name" id="nombre" placeholder="  Nombre" class="inputDatos">
+                    <input type="text" name="name" number id="apellido" placeholder="  Apellido" class="inputDatos">
+                    <input type="number" name="number" id="celular" placeholder="  Celular" class="inputDatos">
+                    <input type="email" name="email" id="email" placeholder="  Escribe tu correo" class="inputDatos">
+                    <textarea name="message" id="mensaje" placeholder="  Escribe tus comentarios" rows="5" cols="32" class="inputDatos"></textarea>
+                    <section class="con-3-buttom">
+                        <button type="submit" id="button-enviar" class="Buttons-patusalud"> Enviar </button>
+                    </section>
+                </form>
+            </section>
+        </article>
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="../Pictures/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../Pictures/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-info">
+                <p>Email: patusalud@gmail.com</p>
+                <p>Teléfono: 1234567898</p>
+                <p>Ubicación: Medellín, Antioquia</p>
+                <p>&copy; 2025 Patu Salud.</p>
+            </div>
         </div>
-        <div class="footer-info">
-          <p>Email: patusalud@gmail.com</p>
-          <p>Teléfono: 1234567898</p>
-          <p>Ubicación: Medellín, Antioquia</p>
-          <p>&copy; 2025 Patu Salud.</p>
-        </div>
-      </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/contactenos.js"></script>
-  </body>
+</body>
+
 </html>
