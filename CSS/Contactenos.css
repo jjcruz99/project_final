@@ -80,7 +80,7 @@
     font-family: "Poppins", serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../Pictures/img_contactenos/psychologist.jpg);
+    background-image: url(../img/img_contactenos/psychologist.jpg);
     background-size: cover;
 }
 
@@ -284,19 +284,6 @@
         width: 40px;
         height: 40px;
     }
-    /* css para navBar  */
-    .navBarra {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .navBarra div {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 
@@ -346,18 +333,6 @@
         height: 40px;
     }
     /* css para NavBarra y .footer */
-    .navBarra {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .navBarra div {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 
@@ -402,13 +377,6 @@
         height: 25px;
     }
     /* css navBarra */
-    .navBarra {
-        display: flex;
-    }
-    .navBarra div {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 

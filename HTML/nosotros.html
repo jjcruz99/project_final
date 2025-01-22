@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../CSS/Nosotros.css">
-    <link rel="stylesheet" href="../CSS/navegacion.css">
+    <link rel="stylesheet" href="../css/Nosotros.css">
+    <link rel="stylesheet" href="../css/navegacion.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -15,47 +15,30 @@
 
 <body>
     <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navBarra fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="../Pictures/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
-            </a>
-            <div class="collapse navbar-collapse" id="navLinks">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link aBarra">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="servicios.html" class="nav-link aBarra">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="productos.html" class="nav-link aBarra">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="nosotros.html" class="nav-link aBarra">Conócenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pagos.html" class="nav-link aBarra">Pagos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contactanos.html" class="nav-link aBarra optionSelect">Contáctanos</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="container-boton">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                </div>
-                <a href="#" class="navbar-brand">
-                    <img src="../Pictures/user (1).png" alt="Icono de Usuario" class="IconUser">
-                </a>
-            </div>
+    <nav class="navBarra">
+        <!-- Logo -->
+        <div class="nav-brand">
+            <img src="../img/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
         </div>
 
+        <!-- Botón de menú (icono hamburguesa) -->
+        <div class="nav-toggle" id="navToggle">
+            <img src="../img/f.png" alt="Menú" class="hamburger-icon">
+        </div>
 
+        <!-- Enlaces del menú -->
+        <div class="nav-links" id="navLinks">
+            <a href="./index.html" class="aBarra" id="inicio">Inicio</a>
+            <a href="./perfil.html" class="aBarra" id="perfil">perfil</a>
+            <a href="./servicios.html" class="aBarra" id="servicios">Servicios</a>
+            <a href="./productos.html" class="aBarra" id="productos">Productos</a>
+            <a href="#" class="aBarra optionSelect" id="nosotros">Conócenos</a>
+            <a href="./pagos.html" class="aBarra" id="pagos">Pagos</a>
+            <a href="./contactenos.html" class="aBarra" id="contactanos">Contáctanos</a>
+            <img src="../img/user (1).png" class="IconUser">
+        </div>
     </nav>
+
     <!-- Sección "Acerca de Nosotros" -->
     <main>
         <!-- About Section -->
@@ -71,35 +54,35 @@
             <h2 class="section-title">Nuestro Equipo</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="../Pictures/foto Gissell.png" alt="Gissell Trejos" class="member-photo">
+                    <img src="../img/foto Gissell.png" alt="Gissell Trejos" class="member-photo">
                     <div class="member-info">
                         <h3>Gissell Trejos Marín</h3>
                         <p>Desarrolladora Front-end de la plataforma PatuSalud</p>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="../Pictures/Foto Angie.png" alt="Angie" class="member-photo">
+                    <img src="../img/Foto Angie.png" alt="Angie" class="member-photo">
                     <div class="member-info">
                         <h3>Angie Barón Bareño</h3>
                         <p>Desarrolladora Full Stack de la plataforma Patu Salud</p>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="../Pictures/Kathe perfil .jpg" alt="Kathe" class="member-photo">
+                    <img src="../img/Kathe perfil .jpg" alt="Kathe" class="member-photo">
                     <div class="member-info">
                         <h3>Katherinne Cardenas Clavijo</h3>
                         <p>Desarrolladora Full Stack de la plataforma Patu Salud</p>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="../Pictures/vertical-aerial-shot-sea-waves-hitting-cliff.jpg" alt="Yulian" class="member-photo">
+                    <img src="../img/vertical-aerial-shot-sea-waves-hitting-cliff.jpg" alt="Yulian" class="member-photo">
                     <div class="member-info">
                         <h3>Yulian Vargas Motta</h3>
                         <p>Desarrollador Full Stack de la plataforma Patu Salud</p>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="../Pictures/john perfil.jpg" alt="Jhon" class="member-photo">
+                    <img src="../img/john perfil.jpg" alt="Jhon" class="member-photo">
                     <div class="member-info">
                         <h3>John Cruz Mogollón</h3>
                         <p>Desarrollador Full Stack de la plataforma Patu Salud</p>
@@ -124,7 +107,7 @@
         <!-- Impacto -->
         <div class="impact-section">
             <h2 class="section-title">Nuestro Impacto</h2>
-            <img src="../Pictures/global.png" alt="Global Impact" class="impact-photo">
+            <img src="../img/global.png" alt="Global Impact" class="impact-photo">
             <p>Nuestra plataforma transforma el acceso a la salud mental, conectando personas con psicólogos profesionales y eliminando barreras.</p>
         </div>
 
@@ -198,7 +181,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="../Pictures/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+                <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
             </div>
             <div class="footer-info">
                 <p>Email: patusalud@gmail.com</p>
@@ -217,6 +200,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/testimonios.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>

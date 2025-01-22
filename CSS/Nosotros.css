@@ -40,7 +40,6 @@
     background-color: #B08EA2;
     padding: 5.5rem;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     margin: 10px 0px 0px 0px;
 }
 
@@ -394,14 +393,6 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .navBarra {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .navBarra div {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
     .footer-content {
         display: flex;
         flex-wrap: wrap;
@@ -420,14 +411,6 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .navBarra {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .navBarra div {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
     .footer-content {
         display: flex;
         flex-wrap: wrap;
@@ -445,13 +428,6 @@
     .team-grid {
         display: flex;
         flex-wrap: wrap;
-    }
-    .navBarra {
-        display: flex;
-    }
-    .navBarra div {
-        display: flex;
-        justify-content: center;
     }
 }
 
