@@ -24,21 +24,21 @@
             "name": "Toallas antideslizantes para yoga",
             "img": "https://http2.mlstatic.com/D_NQ_NP_2X_719791-CBT75865046604_042024-F.webp",
             "description": "Ideales para hot yoga o prácticas intensas",
-            "precio": 134000,
+            "precio": 134.000,
             "cantidad": 10
         },
         {
-            "name": "Rodillos de espuma",
-            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_762113-MCO79945808994_102024-F.webp",
-            "description": "Para masajes y recuperación muscular",
-            "precio": 147805,
+            "name": "Cuerdas con contador de saltos",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_773055-MLU72821422833_112023-F.webp",
+            "description": "Cuerda para saltar",
+            "precio": 120.000,
             "cantidad": 10
         },
         {
-            "name": "Bolsas para mats de yoga",
-            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_871452-MCO51315768439_082022-F.webp",
-            "description": "Prácticas y con diseños atractivos",
-            "precio": 125800,
+            "name": "Step aeróbico",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_688844-MLU78042982993_072024-F.webp",
+            "description": "step graduable",
+            "precio": 100.000,
             "cantidad": 10
         },
         {
@@ -56,10 +56,10 @@
             "cantidad": 10
         },
         {
-            "name": "Cuerdas con contador de saltos",
-            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_773055-MLU72821422833_112023-F.webp",
-            "description": "Cuerda para saltar",
-            "precio": 120000,
+            "name": "Difusores",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_945007-MCO79604865176_102024-F.webp",
+            "description": "Difusores aromatizar para el ambiente",
+            "precio": 293.000,
             "cantidad": 10
         },
         {
@@ -74,6 +74,13 @@
             "img": "https://http2.mlstatic.com/D_NQ_NP_2X_859986-MLA76200796666_052024-F.webp",
             "description": "Suplemento",
             "precio": 105000,
+            "cantidad": 10
+        },
+        {
+            "name": "Velas aromáticas",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_688223-MCO79579552278_102024-F.webp",
+            "description": "Fragancias calmantes como lavanda o eucalipto",
+            "precio": 38.000,
             "cantidad": 10
         }
     ]
