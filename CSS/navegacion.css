@@ -1,0 +1,242 @@
+/* --------------- RESET Y GLOBAL --------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* --------------- VARIABLES GLOBALES --------------- */
+
+:root {
+    --primary-color: #647E92;
+    --Nav-Color: #AF6894;
+    --secondary-color: #455970;
+    --background-color: #b08ea21e;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --spacing-base: 1rem;
+    --border-radius: 10px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --help-button-color: #7FD7E3;
+}
+
+
+/* --------------- FUENTES --------------- */
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 26px;
+}
+
+
+/* --------------- NAVBAR Y NAVIGATION --------------- */
+
+.navBarra {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #AF6894;
+    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo */
+
+.logo {
+    height: 80px;
+    width: 60px;
+    border-radius: 10px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+
+/* Enlaces del Navbar */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Estilo base de los enlaces */
+
+.aBarra {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+
+
+/* Hover en los enlaces */
+
+.aBarra:hover {
+    background-color: white;
+    color: #B08EA2;
+    transform: scale(1.2);
+}
+
+
+/* Página activa - Fondo blanco y texto oscuro */
+
+.aBarra.active {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    background-color: white;
+    color: #B08EA2;
+}
+
+
+/* Icono de usuario */
+
+.IconUser {
+    padding: 3px 10px;
+    height: 35px;
+    width: auto;
+}
+
+
+/* Hover del icono de usuario */
+
+.IconUser:hover {
+    transform: scale(1.2);
+}
+
+
+/* --------------- Botón de menú mejorado para móviles --------------- */
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+
+/* Icono de hamburguesa */
+
+.hamburger-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+
+/* Animación cuando el menú está abierto (cuando la clase "active" se agrega) */
+
+.nav-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger::before {
+    top: -10px;
+}
+
+.hamburger::after {
+    bottom: -10px;
+}
+
+
+/* Ajustes para responsive */
+
+@media (max-width: 768px) {
+    .navBarra {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .nav-brand {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav-toggle {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav-links {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        background-color: var(--Nav-Color);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        display: none;
+        z-index: 999;
+        gap: 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .aBarra {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+    #activePage {
+        display: none !important;
+    }
+}
