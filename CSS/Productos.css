@@ -47,6 +47,35 @@ body {
     font-size: 26px;
 }
 
+/* Estilos para el carrito de compras */
+.container-carro{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+     
+}
+
+.carrito {
+    background-color: #AF6894;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.carrito-icono {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.carrito-conteo {
+    font-size: 1.2em;
+}
+
 h1 {
     background-color: #ffffff;
     padding-top: 30px;
@@ -58,7 +87,19 @@ h1 {
     color: #AF6894;
     margin: 20px 0;
 }
-
+ /* css alerta perzonalizada */
+.custom-alert {
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
 #container-yoga{
     padding-top: 30px;
     display: flex;
@@ -80,7 +121,6 @@ h1 {
     gap: 30px;
     justify-content: center;
 }
-
 .product {
     width: 250px;
     padding: 20px 10px 5px 10px;
