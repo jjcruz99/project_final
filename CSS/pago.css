@@ -1,0 +1,236 @@
+
+/* css carrito */
+.container-principal{
+    display: flex;
+    flex-wrap: wrap; 
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+    
+}
+.conatiner-articulos{
+    width: 48%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.conatiner-compras{
+    width: 48%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    }
+.sub-titulos{
+    color: #B08EA2;
+    font-size: 40px;
+    font-weight: 600;
+}
+.container-cards{
+    border: 1px solid rgba(169, 161, 161, 0.285);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    padding:20px 20px 20px 20px;
+    gap: 40px;
+}
+
+.container-imagen{
+    display: flex; 
+    flex-direction: column;
+}
+.container-detalles{
+   display: flex; 
+   flex-direction: column;
+   padding: 10px;
+   text-align: left;
+}
+   /* css referencia precio */
+.container-detalles p {
+    text-align: left;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.container-imagen img{
+    width: 150px; 
+    height: 150px;
+}
+
+/* contenedor botones + y - */
+.containerBotones{
+    display: flex;
+    margin-top: 20px;
+}
+.containerBotones button{
+    margin-top: 20px;
+    width: 40px; 
+    height: 40px;
+    margin:10px 20px 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#7fd7e3;
+    border:1px solid #B08EA2;
+}
+.container-botones-compra button{
+    width: 150px;
+    height: 80px;
+    margin: 40px 30px 40px 30px;
+    border-radius: 35px;
+    background-color:#7fd7e3;
+    border:1px solid #B08EA2;
+    font-size: 26px;
+}
+
+#container-carro-vacio{
+    margin-top: 100px;
+    background-color: #7fd7e3;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#container-carro-vacio p{
+    font-size: 26px;
+}
+.icono-regalo{
+   font-size: 50px;
+}
+
+
+.container-total-compra{
+    border-top: 2px solid #B08EA2;
+}
+.container-total-compra p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.img-payu{
+    margin-top: 40px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+@media (min-width: 1200px) {
+ 
+}
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .img-payu{
+        margin-top: 40px;
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .container-principal{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;  
+    }
+    .conatiner-articulos{
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .conatiner-compras{
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        }
+    .img-payu{
+        margin-top: 40px;
+        width: 250px;
+        height: 120px;
+        border-radius: 10px;
+    }
+    .container-cards{
+        border: 1px solid rgb(240, 235, 235);
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        padding:20px 20px 20px 20px;
+        gap: 80px;
+    }
+}
+/* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .img-payu{
+        margin-top: 40px;
+        width: 250px;
+        height: 120px;
+        border-radius: 10px;
+    }
+}
+/* Estilos para dispositivos extra pequeÃ±os (XS): Menos de 576px */
+@media (max-width: 575.98px) {
+    .img-payu{
+        margin-top: 40px;
+        width: 160px;
+        height: 70px;
+        border-radius: 10px;
+    }
+    .container-cards{
+        border: 1px solid rgba(255, 255, 255, 0.285);
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+        padding:20px 20px 20px 20px;
+        gap: 40px;
+    }
+    .container-total-compra p{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+   
+    .container-botones-compra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .container-botones-compra button{
+        width: 150px;
+        height: 50px;
+        margin: 20px;
+        border-radius: 35px;
+        background-color:#7fd7e3;
+        border:1px solid #B08EA2;
+        font-size: 16px;
+    }
+}
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+/* ccs conatiner-compras padre */
+
+
+/* css carrito */
