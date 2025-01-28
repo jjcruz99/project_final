@@ -176,6 +176,9 @@
 }
 /* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
 @media (max-width: 767.98px) {
+    *{
+        font-size: 20px ;
+    }
     .container-principal{
         display: flex;
         flex-direction: column;
@@ -204,6 +207,7 @@
     .container-cards{
         border: 1px solid rgb(240, 235, 235);
         display: flex;
+        flex-direction: column;
         justify-content: center ;
         align-items: center;
         padding:20px 20px 20px 20px;
