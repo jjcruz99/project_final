@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Poppins','sans serif';
+}
 /* css carrito */
 .container-principal{
     display: flex;
@@ -34,6 +36,9 @@
     border: 1px solid rgba(169, 161, 161, 0.285);
     display: flex;
     justify-content: center ;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    margin: 30px;
     align-items: center;
     padding:20px 20px 20px 20px;
     gap: 40px;
@@ -68,12 +73,11 @@
 }
 .containerBotones button{
     margin-top: 20px;
-    width: 40px; 
-    height: 40px;
+    width: 30px; 
+    height: 30px;
     margin:10px 20px 10px 20px;
     border-radius: 10px;
     text-align: center;
-    background-color:#7fd7e3;
     border:1px solid #B08EA2;
 }
 .container-botones-compra button{
@@ -81,9 +85,9 @@
     height: 80px;
     margin: 40px 30px 40px 30px;
     border-radius: 35px;
-    background-color:#7fd7e3;
+    background-color:#AF6894;
     border:1px solid #B08EA2;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 #container-carro-vacio{
@@ -102,6 +106,7 @@
 
 
 .container-total-compra{
+    margin-top: 30px;
     border-top: 2px solid #B08EA2;
 }
 .container-total-compra p{
@@ -113,9 +118,16 @@
 
 .img-payu{
     margin-top: 40px;
-    width: 500px;
-    height: 300px;
+    margin-left: 15px;
+    width: 80px;
+    max-height: 50px;
     border-radius: 10px;
+}
+
+.btn-pago{
+    max-height: 35px;
+    align-items: center;
+    justify-content: center;
 }
 /* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
 @media (min-width: 1200px) {
@@ -123,12 +135,7 @@
 }
 /* Estilos para dispositivos grandes (L): 992px a 1199px */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .img-payu{
-        margin-top: 40px;
-        width: 400px;
-        height: 300px;
-        border-radius: 10px;
-    }
+
 }
 /* Estilos para dispositivos medianos (M): 768px a 991px */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -158,12 +165,6 @@
         text-align: center;
         padding: 10px;
         }
-    .img-payu{
-        margin-top: 40px;
-        width: 250px;
-        height: 120px;
-        border-radius: 10px;
-    }
     .container-cards{
         border: 1px solid rgb(240, 235, 235);
         display: flex;
@@ -174,51 +175,45 @@
     }
 }
 /* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
-@media (min-width: 576px) and (max-width: 767.98px) {
-    .img-payu{
-        margin-top: 40px;
-        width: 250px;
-        height: 120px;
-        border-radius: 10px;
+@media (max-width: 767.98px) {
+    *{
+        font-size: 20px ;
     }
-}
-/* Estilos para dispositivos extra pequeÃ±os (XS): Menos de 576px */
-@media (max-width: 575.98px) {
-    .img-payu{
-        margin-top: 40px;
-        width: 160px;
-        height: 70px;
-        border-radius: 10px;
-    }
-    .container-cards{
-        border: 1px solid rgba(255, 255, 255, 0.285);
+    .container-principal{
         display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;  
+    }
+    .conatiner-articulos{
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .conatiner-compras{
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        }
+    .container-cards{
+        border: 1px solid rgb(240, 235, 235);
+        display: flex;
+        flex-direction: column;
         justify-content: center ;
         align-items: center;
         padding:20px 20px 20px 20px;
-        gap: 40px;
+        gap: 80px;
     }
-    .container-total-compra p{
-        margin-top: 10px;
-        font-size: 16px;
-        font-weight: 300;
-    }
-   
-    .container-botones-compra{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    }
-    .container-botones-compra button{
-        width: 150px;
-        height: 50px;
-        margin: 20px;
-        border-radius: 35px;
-        background-color:#7fd7e3;
-        border:1px solid #B08EA2;
-        font-size: 16px;
-    }
+
 }
  
 
