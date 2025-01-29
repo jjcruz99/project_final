@@ -1,0 +1,260 @@
+section {
+    padding: 2rem 9%;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Poppins', serif;
+    margin: 20px;
+}
+.inicio {
+    background-color: #90acba;
+    background-image: linear-gradient(rgb(112, 202, 209, 0.5), rgba(210, 160, 229, 0.5)), url("../img/Pictures_Inicio/patubanner.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: #fff; 
+    margin: 0 auto;
+    padding: 150px 0;
+    position: relative;
+    
+}
+
+.inicio .content {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+.inicio .content h3 {
+    font-size: 50px;
+    color: #af6894;
+    text-align: center;
+    font-family: 'Poppins', serif;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.inicio .content p {
+    font-size: 26px;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#agendarcita{
+    border: 3px solid #db758f; 
+    border-radius: 50px;
+}
+.btn-cita  {
+    width: 150px;
+    height: 60px; 
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    color: #ffffff;
+    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
+    opacity: 1; 
+}
+
+.btn-cita:hover {
+    color: #000000;
+    background: #71cad1;
+}
+
+.card-imagen {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+.card {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 2rem;
+    padding: 1rem;
+}
+.card-body {
+    min-width: 300px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #ffffff;
+}
+.Nuestras-secciones{
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+.titulo{
+    font-size: 50px;
+    color: #af6894;
+    text-align: center;
+    font-family: 'Poppins', serif;
+    max-width: 50%;
+    margin: 0 auto;
+}
+.articulos{
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.articulos-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding: 0 5%; 
+    box-sizing: border-box;  
+
+  }
+  .enlace{
+    display: inline;
+  }
+  
+.articulos-item{
+    height: 250px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 380px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+    transform: translateX(-50%);
+}
+.articulos-item-1{
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+
+}
+.articulos-item-2, .articulos-item-4{
+    left: 250px;
+    opacity: 0.8;
+    width: 380px;
+    z-index: 1;
+}
+.articulos-item-2{
+    transform: translateX(-50%);
+    left: 30%;
+}
+.articulos-item-3{
+    left: 580px;
+    opacity: 1;
+    height: 350px;
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+    transform: translateX(-50%);
+    width: 430px;
+    z-index: 2;
+}
+.articulos-item-4{
+    left: 70%;
+    transform: translateX(-50%);
+}
+.articulos-item-5{
+    left: 1000px;
+    opacity: 0.4;
+    transform: translateX(-50%);
+}  
+.articulos-nav{
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.articulos nav li{
+    background-color: #eee;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 5px;
+    width: 10px;
+}
+.articulos-nav li.articulos-item-selected{
+    background-color: #555;
+}
+.articulos-control {
+    position: absolute;
+    top: 145%;
+    transform: translateY(-50%);
+    background: rgba(175, 104, 148, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.articulos-control.prev {
+    left: 0.5px;
+}
+
+.articulos-control.next {
+    right: 0.5px;
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 575px) {
+    .articulos-container {
+        flex-direction: column; /* Cambio a columna para dispositivos pequeños */
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    .articulos-item {
+        width: 100%; /* Imágenes ocupan el 100% del ancho */
+        max-width: 300px; /* Ajustar el máximo para que se vean bien */
+        margin-bottom: 20px; /* Añadir espacio entre los elementos */
+    }
+
+    .articulos-control {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsividad para pantallas medianas */
+@media (min-width: 576px) and (max-width: 991px) {
+    .articulos-container {
+        flex-direction: row; /* Cambio a fila para pantallas medianas */
+        justify-content: space-between;
+    }
+    .articulos-item {
+        width: 30%; /* Aumenta el tamaño en pantallas medianas */
+        max-width: 380px;
+    }
+
+    .articulos-control.prev, 
+    .articulos-control.next {
+        top: 90%; 
+        transform: translateY(-50%);
+    }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 992px) {
+    .articulos-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .articulos-item {
+        width: 380px;
+    }
+
+    .articulos-control {
+        font-size: 1.8rem;
+    }
+}

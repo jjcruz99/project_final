@@ -7,3 +7,5 @@
         function cerrarModal(modalId) {
             document.getElementById(modalId).style.display = "none";
         }
+
+        
