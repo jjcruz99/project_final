@@ -58,6 +58,10 @@ class Carousel {
       btn.addEventListener('click', () => this.move(btn.classList.contains('prev') ? 'prev' : 'next'));
     });
   }
+
+  // fullcalendar revisar ya gregar como bootstarp luego que hace la conexion con el backend
+
+
 }
 
 

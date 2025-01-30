@@ -205,25 +205,6 @@ body {
     right: 0.5px;
 }
 
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 575px) {
-    .articulos-container {
-        flex-direction: column; /* Cambio a columna para dispositivos pequeños */
-        justify-content: center;
-        padding: 0 5%;
-    }
-
-    .articulos-item {
-        width: 100%; /* Imágenes ocupan el 100% del ancho */
-        max-width: 300px; /* Ajustar el máximo para que se vean bien */
-        margin-bottom: 20px; /* Añadir espacio entre los elementos */
-    }
-
-    .articulos-control {
-        font-size: 1.5rem;
-    }
-}
 /* Footer */
 
 .footer {
@@ -309,37 +290,57 @@ body {
     width: 20px;
     height: 20px;
 }
+/* Estilos para dispositivos extra pequeños (XS): Menos de 576px */
 
-/* Responsividad para pantallas medianas */
-@media (min-width: 576px) and (max-width: 991px) {
-    .articulos-container {
-        flex-direction: row; /* Cambio a fila para pantallas medianas */
-        justify-content: space-between;
+@media (max-width: 575.98px) {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .articulos-item {
-        width: 30%; /* Aumenta el tamaño en pantallas medianas */
-        max-width: 380px;
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
     }
-
-    .articulos-control.prev, 
-    .articulos-control.next {
-        top: 90%; 
-        transform: translateY(-50%);
+    .purpose-grid {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
-/* Para pantallas grandes */
-@media (min-width: 992px) {
-    .articulos-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    .articulos-item {
-        width: 380px;
-    }
+/* Estilos para dispositivos pequeños (S): 576px a 767px */
 
-    .articulos-control {
-        font-size: 1.8rem;
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .purpose-grid {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
+
+
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+
+@media (min-width: 1200px) {}
