@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins', serif;
+    margin: 20px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.5px;
+    padding: 20px;
+}
+
+#calendario, #citas {
+    height: 500px;
+    padding: 20px;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    font-size: 26px;
+    color: #af6894;
+    text-align: center;
+    font-family: 'Poppins', serif;
+
+}
+
+/* Estilos responsivos */
+@media (max-width: 575.98px) {
+    .contenedor {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contenedor {
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contenedor {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        grid-template-columns: 50% 50%;
+    }
+}
