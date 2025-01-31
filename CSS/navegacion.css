@@ -322,4 +322,23 @@ body {
     #activePage {
         display: none !important;
     }
+    /* --------------- Modificación para centrar el icono de usuario en pantallas pequeñas --------------- */
+    .navBarra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Para pantallas pequeñas, centrar el icono de usuario */
+    .IconUser {
+        margin-top: 0;
+        /* Elimina el margen superior */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        /* Asegura que el icono esté centrado */
+    }
+    /* Opcional: Si quieres centrar el menú de navegación cuando se hace responsive */
+    .nav-links {
+        text-align: center;
+    }
 }

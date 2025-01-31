@@ -5,6 +5,8 @@
     width: 100%;
     min-height: 100vh;
     transition: all 0.3s ease;
+    flex-wrap: wrap;
+    /* Esto permite que los elementos se ajusten en pantallas pequeñas */
 }
 
 
@@ -168,6 +170,9 @@ body.dark .text-overlay {
     background-color: green;
 }
 
+
+/* Botón de modo oscuro */
+
 .dark-mode-button {
     font-size: 0.8rem;
     padding: 0.5rem;
@@ -219,4 +224,51 @@ body.dark .text-overlay {
 .alert.error {
     background-color: #e53e3e;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .left-side,
+    .right-side {
+        width: 100%;
+        height: auto;
+    }
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
+    .text-overlay p {
+        font-size: 1rem;
+    }
+    .card {
+        width: 80%;
+        padding: 1.5rem;
+    }
+    .card-header h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .text-overlay h2 {
+        font-size: 1.2rem;
+    }
+    .text-overlay p {
+        font-size: 0.9rem;
+    }
+    .card {
+        width: 90%;
+    }
+    .card-header h2 {
+        font-size: 1rem;
+    }
+    .dark-mode-button {
+        width: 35px;
+        height: 35px;
+    }
 }

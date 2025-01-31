@@ -12,7 +12,7 @@ function showAlert(message, type) {
     alertContainer.appendChild(alert); // Añade la alerta al contenedor
 
     // Eliminar la alerta después de 6 segundos
-    setTimeout(() => alert.remove(), 6000);
+    setTimeout(() => alert.remove(), 4000);
 }
 
 // Función para obtener los usuarios desde el archivo JSON
