@@ -1,0 +1,37 @@
+[{
+        "email": "Patusalud@gmail.com",
+        "password": "Patusalud2023@",
+        "fullname": "Patu Salud",
+        "photo": "../img/Logo.png"
+    },
+    {
+        "email": "yulian.vargas@patusalud.com",
+        "password": "Patusalud2023@Yulian",
+        "fullname": "Yulian Vargas",
+        "photo": "../img/yulian.jpg"
+    },
+    {
+        "email": "angie.baron@patusalud.com",
+        "password": "Patusalud2023@Angie",
+        "fullname": "Angie Barón",
+        "photo": "../img/Angie.png"
+    },
+    {
+        "email": "john.cruz@patusalud.com",
+        "password": "Patusalud2023@John",
+        "fullname": "John Cruz",
+        "photo": "../img/john.jpg"
+    },
+    {
+        "email": "katherinne.cardenas@patusalud.com",
+        "password": "Patusalud2023@Katherinne",
+        "fullname": "Katherinne Cárdenas",
+        "photo": "../img/kathe.jpg"
+    },
+    {
+        "email": "gissell.trejos@patusalud.com",
+        "password": "Patusalud2023@Gissell",
+        "fullname": "Gissell Trejos",
+        "photo": "../img/Gissell.png"
+    }
+]

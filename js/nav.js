@@ -27,16 +27,22 @@ navLinks.forEach(link => {
                 link.style.color = "#FFFFFF";
                 break;
             case "pagos.html":
-                link.style.backgroundColor = "#800080";
-                link.style.color = "#FFFFFF";
+                link.style.backgroundColor = "#FFFFFF";
+                link.style.color = "black";
                 break;
             case "contactenos.html":
                 link.style.backgroundColor = "#e5e5e5";
                 link.style.color = "black";
                 break;
+            case "inicioSecion.html":
+                link.style.backgroundColor = "#F4F4F400";
+                link.style.color = "#F4F4F400";
+                break;
+
             default:
                 link.style.backgroundColor = "#FFFFFF";
                 link.style.color = "#B08EA2";
+
         }
     }
 });

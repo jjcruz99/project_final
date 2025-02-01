@@ -1,9 +1,5 @@
 let contadorProductos = localStorage.getItem("canProductos");
-// Espera a que el DOM se haya cargado completamente
-// document.addEventListener('DOMContentLoaded', function() {
- 
-// });
-
+const notyf = new Notyf();
 function agregarArticulos() {
   
   let valorCompra = document.getElementById('valorCompra');
@@ -88,7 +84,7 @@ function agregarArticulos() {
      totalCompra.textContent = "Total = $ " + ((sumatoriaValorCompra*0.19)+ sumatoriaValorCompra).toFixed(2);
     }
    else{
-    alert("No hay productos en el carrito");
+    notyf.success("No hay productos en el carrito");
     valorCompra.textContent = "Valor = 0";
     iva.textContent = "IVA (19% ) = 0";
     totalCompra.textContent = "Total = 0";
@@ -111,7 +107,6 @@ function agregarArticulos() {
 
 
 function funAgregar(ubicacion){
-  
   let ultimoProducto = 0;
   let numeroProducto2 =0;
   for (let i = 0; i < localStorage.length; i++) {
@@ -134,7 +129,7 @@ function funAgregar(ubicacion){
   const  clonReferencia = localStorage.getItem("referencia"+ubicacion);
   const  clonImg = localStorage.getItem("img"+ubicacion);
   const  clonPrecio = localStorage.getItem("precio"+ubicacion);
-  alert("Has agregado otro " + clonName + " a tu carrito");
+  notyf.success("Has agregado otro articulo a tu carrito");
   ///guardar en el LS el producto adicional
   localStorage.setItem("name"+ultimoProducto,clonName);
   localStorage.setItem("referencia"+ultimoProducto,clonReferencia);
@@ -143,12 +138,12 @@ function funAgregar(ubicacion){
 
   contadorProductos++;
   localStorage.setItem("canProductos",contadorProductos);
-   
-  actualizar();
+  // Esperar 3 segundos (3000 ms) antes de llamar a la función actualizar
+  setTimeout(actualizar, 1500); 
 }
 
 function funEliminar(ubicacion){
-  alert("Eliminaste el articulo : " + localStorage.getItem("name"+ubicacion));
+  notyf.error("Eliminaste un articulo")
   localStorage.removeItem("img"+ubicacion);
   localStorage.removeItem("name"+ubicacion);
   localStorage.removeItem("precio"+ubicacion);
@@ -158,16 +153,10 @@ function funEliminar(ubicacion){
   contadorProductos--;
   localStorage.setItem("canProductos",contadorProductos);
    
-  actualizar();
+  // Esperar 3 segundos (1500 ms) antes de llamar a la función actualizar
+  setTimeout(actualizar, 1500);  
 }
 
-// const containerCards = document.getElementById('cards');
-// const img = document.createElement('img');
-// const parrafo = document.createElement('p');
-// parrafo.innerText = localStorage.getItem('name1');
-// const imgLS = localStorage.getItem('img1');
-// img.src = imgLS;
-// containerCards.appendChild(parrafo);
-// containerCards.appendChild(img);
+
 
 
