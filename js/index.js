@@ -1,3 +1,5 @@
+
+// selecciono los elementos del html para manipularlos (DOM)
 const articulosContainer = document.querySelector('.articulos-container');
 const articulosControlsContainer = document.querySelector('.articulos-controls');
 const articulosItems = document.querySelectorAll('.articulos-item');
@@ -17,7 +19,9 @@ class Carousel {
     addClickEventToItems() {
         // Seleccionamos todos los elementos 
         const items = this.carouselContainer.querySelectorAll('.articulos-item');
-    
+  
+
+        //evenlistener se usa para detectar los click o teclas (redirige al usuario)
         // Agregamos un event listener a cada elemento del carrusel
         items.forEach(item => {
           item.addEventListener('click', (event) => {
@@ -32,7 +36,7 @@ class Carousel {
         });
       }
 
-// actualiza 
+// actualiza Re asigna las clases de cada elemto para su posicion
   updateItems() {
     this.items.forEach((el, i) => {
       el.className = `articulos-item articulos-item-${i + 1}`;

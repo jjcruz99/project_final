@@ -64,7 +64,7 @@ async function handleSubmit(event) {
             userIcon.alt = `Foto de ${usuario.fullname}`;
             localStorage.setItem('loggedUser', JSON.stringify(usuario));
             showAlert('¡Bienvenido!', 'success');
-            window.location.href = '../HTML/perfil.html';
+            window.location.href = '../HTML/servicios.html';
         } else {
             showAlert('Usuario o contraseña incorrectos.', 'error');
         }
