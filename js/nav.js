@@ -15,7 +15,7 @@ navLinks.forEach(link => {
                 link.style.color = "black";
                 break;
             case "servicios.html":
-                link.style.backgroundColor = "#0000FF";
+                link.style.backgroundColor = "#B9D9E3";
                 link.style.color = "#FFFFFF";
                 break;
             case "productos.html":
