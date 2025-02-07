@@ -11,55 +11,6 @@
     font-size: 26px;
 }
 
-.footer {
-    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
-    padding: 2rem;
-    margin-top: 3rem;
-    color: white;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    gap: 4rem;
-}
-
-.footer-logo {
-    grid-column: 1;
-}
-
-.footer-logo-img {
-    height: 180px;
-}
-
-.footer-info {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 2rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.footer-info p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.footer-copyright {
-    grid-column: 3;
-    text-align: right;
-    padding-left: 2rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 3rem;
-    color: white;
-}
-
 
 /* CSS pagina contactenos */
 
@@ -75,65 +26,66 @@
 
 .con-main-contactenos {
     /* border: 1px solid black; */
-    margin: 20px 0px 0px 0px;
-    padding: 20px;
+    margin: 10px 0px 0px 0px;
+    padding: 2px;
     font-family: "Poppins", serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url(../img/img_contactenos/psychologist.jpg);
-    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-image: url(../img/img_contactenos/armonia.jpeg);
+    background-size: cover;  
 }
-
 
 /* contenedor hijo contactenos */
 
 .con-2 {
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #ffffff;
-    opacity: 0.7;
+    background:rgba(22, 22, 22, 0.85);   
 }
 
 
 /* contenedor hijo formulario */
 
 .con-3 {
+    padding: 20px;
     text-align: center;
     padding: 0px 40px 0px 40px;
-    background: #ffffff;
-    opacity: 0.8;
+    background:rgba(22, 22, 22, 0.85);      
 }
 
 
 /* boton enviar */
 
 .Buttons-patusalud {
-    width: 150px;
-    height: 60px;
+    width: 170px;
+    height: 70px;
     border-radius: 35px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     font-size: 20px;
-    color: #ffffff;
-    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
-    ;
-    border: 3px solid #db758f;
+    color: #000000;
+    background: #FEA871;
+    border: 3px solid #AF6894;
     opacity: 5;
 }
 
 .Buttons-patusalud:hover {
     color: #000000;
-    background: #71cad1;
-}
+    background: #03ff6c;
+    border: 3px solid #03ff6c;
 
-.titulos {
+};
+
+.titulos{
     font-family: "Poppins", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #AF6894;
 }
 
@@ -144,7 +96,11 @@
 .con-3 section {
     margin: 40px;
 }
-
+.con-2 section p {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
 .con-redes-contactenos {
     display: flex;
     justify-content: space-between;
@@ -186,7 +142,7 @@
 .inputDatos {
     display: block;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 10px;
     width: 100%;
     background: #af6894;
@@ -211,6 +167,11 @@
 /* Estilos para dispositivos extra pequeÃ±os (XS): Menos de 576px */
 
 @media (max-width: 575.98px) {
+    .titulos{
+        color: #AF6894;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
     .con-main-contactenos {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -228,13 +189,7 @@
         text-align: center;
     }
     .con-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        text-align: center;
-        width: 98%;
-        padding: 1px;
+        width: 98%;  
     }
     .con-2 section {
         margin-top: 10px;
@@ -243,10 +198,7 @@
         font-size: 16px;
         text-align: center;
     }
-    .img-redes {
-        width: 10px;
-        height: 10px;
-    }
+
     .con-3 {
         width: 98%;
         text-align: center;
@@ -260,14 +212,15 @@
         justify-content: center;
         align-items: center;
     }
-    .inputDatos {
-        width: 100%px;
-        font-size: 16px;
-    }
+
     .Buttons-patusalud {
         width: 100px;
-        height: 40px;
-        font-size: 10px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .inputDatos {
+        width: 100%;
+        font-size: 16px;
     }
      ::placeholder {
         color: #ffffff;
@@ -276,20 +229,31 @@
     }
     .con-img-redes {
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         padding: 10px;
         gap: 15px;
     }
     .iconos-contacto {
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
     }
+    .img-redes {
+        width: 25px;
+        height: 25px;
+    }
+    
 }
 
 
 /* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .titulos{
+        color: #AF6894;
+        font-size: 2rem;
+        font-weight: 500;
+    }
     .con-main-contactenos {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -300,13 +264,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .img-redes {
-        width: 40px;
-        height: 40px;
-    }
-    .inputDatos {
-        width: 100%px;
     }
     .con-2 {
         width: 95%;
@@ -319,26 +276,42 @@
         justify-content: center;
         align-items: center;
     }
-    .img-redes {
-        width: 25px;
-        height: 25px;
-    }
     .Buttons-patusalud {
-        width: 120px;
-        height: 50px;
-        font-size: 12px;
+        width: 140px;
+        height: 60px;
+        font-size: 16px;
     }
     .iconos-contacto {
         width: 40px;
         height: 40px;
     }
-    /* css para NavBarra y .footer */
+    .iconos-contacto {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .img-redes {
+        width: 40px;
+        height: 40px;
+    }
+    .inputDatos {
+        font-size: 18px;
+        width: 100%;
+    }
+    ::placeholder {
+        font-size: 18px;
+    }
 }
 
 
 /* Estilos para dispositivos medianos (M): 768px a 991px */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .titulos{
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #AF6894;
+    }
     .con-main-contactenos {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -354,13 +327,6 @@
         font-size: 20px;
         text-align: center;
     }
-    .img-redes {
-        width: 40px;
-        height: 40px;
-    }
-    .inputDatos {
-        width: 100%px;
-    }
     .con-2 {
         width: 95%;
     }
@@ -372,21 +338,36 @@
         justify-content: center;
         align-items: center;
     }
-    .img-redes {
-        width: 25px;
-        height: 25px;
+    .iconos-contacto {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
     }
-    /* css navBarra */
+    .img-redes {
+        width: 40px;
+        height: 40px;
+    }
+    .inputDatos {
+        font-size: 20px;
+        width: 90%;
+    }
+    ::placeholder {
+        font-size: 20px;
+    }
 }
 
 
 /* Estilos para dispositivos grandes (L): 992px a 1199px */
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .titulos{
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #AF6894;
+    }
     .con-main-contactenos {
         display: flex;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content:space-between;
     }
     .con-2 {
         display: flex;
@@ -397,9 +378,6 @@
     .img-redes {
         width: 40px;
         height: 40px;
-    }
-    .inputDatos {
-        width: 100%px;
     }
     .con-3 {
         width: 50%;
@@ -416,14 +394,19 @@
     }
     .con-info-contacto div {
         display: flex;
-        align-items: center;
         justify-content: center;
         margin-top: 10px;
     }
     .iconos-contacto {
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .inputDatos {
+        font-size: 20px;
+    }
+    ::placeholder {
+        font-size: 20px;
     }
 }
 
@@ -431,6 +414,13 @@
 /* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
 
 @media (min-width: 1200px) {
+    .titulos{
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2.5rem;
+        color: #AF6894;
+    }
     .img-redes {
         width: 40px;
         height: 40px;
@@ -443,16 +433,22 @@
     .con-2 section p {
         font-size: 20px;
         text-align: center;
+        color: #ffffff;
     }
     .con-info-contacto div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
+       display: flex;
+       justify-content: center; 
+    }   
     .iconos-contacto {
-        width: 25px;
-        height: 25px;
-        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+
+    .inputDatos {
+        font-size: 20px;
+    }
+    ::placeholder {
+        font-size: 20px;
     }
 }

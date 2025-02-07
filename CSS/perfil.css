@@ -277,13 +277,7 @@ p {
 
 /* --------------- FOOTER --------------- */
 
-.footer {
-    text-align: center;
-    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
-    padding: 1rem;
-    margin-top: 3rem;
-    color: white;
-}
+
 
 
 /* --------------- MEDIA QUERIES (RESPONSIVE) --------------- */

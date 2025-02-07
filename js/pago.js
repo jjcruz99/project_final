@@ -152,7 +152,6 @@ function funEliminar(ubicacion){
   
   contadorProductos--;
   localStorage.setItem("canProductos",contadorProductos);
-   
   // Esperar 3 segundos (1500 ms) antes de llamar a la función actualizar
   setTimeout(actualizar, 1500);  
 }
