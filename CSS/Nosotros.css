@@ -19,7 +19,7 @@
 .section-title {
     color: #af6894;
     margin-bottom: 1.5rem;
-    font-size: 2.0rem;
+    font-size: 32px;
     text-align: center
 }
 
@@ -33,15 +33,32 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 .about-container {
     position: relative;
     width: 100%;
-    padding: 100px 0;
-    background-color: #B08EA2;
     padding: 5.5rem;
     text-align: center;
     margin: 10px 0px 0px 0px;
+    overflow: hidden;
 }
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .about-overlay {
     position: absolute;
@@ -49,7 +66,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(176, 142, 162, 0.1);
+    background-color: #af6894;
+    opacity: 0.8; /* Ajusta este valor según necesites */
+    z-index: 2;
 }
 
 .about-content {
@@ -70,7 +89,7 @@
 }
 
 .about-description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 30px;
     color: white;
@@ -98,7 +117,7 @@
     height: 350px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .member-photo {
@@ -153,24 +172,27 @@
 .purpose-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
     align-items: center;
     margin: 10px;
 }
 
 .purpose-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .purpose-item {
-    background-color: #b08ea228;
-    padding: 3.5rem;
+    background-color: #b08ea22f;
+    padding: 1.5rem; 
     color: #222d35;
+    border-radius: 15px; 
+    border: 2px solid #b08ea204; 
+    width: 44%; 
+    text-align: center;
 }
-
 
 /* Nuestro Impacto */
 
@@ -284,9 +306,6 @@
 }
 
 
-/* Footer */
-
-
 /* Bonton de ayuda */
 
 .floating-help {
@@ -322,19 +341,6 @@
 }
 
 
-/* paginas donde se va activar la carpetica */
-
-.about,
-.services,
-.products,
-.contact,
-.about.active,
-.services.active,
-.products.active,
-.contact.active,
-.payments.active {
-    opacity: 1;
-}
 
 
 /* Estilos para dispositivos extra pequeños (XS): Menos de 576px */
@@ -344,7 +350,10 @@
         display: flex;
         flex-wrap: wrap;
     }
-
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .purpose-grid {
         display: flex;
         flex-wrap: wrap;
@@ -359,7 +368,10 @@
         display: flex;
         flex-wrap: wrap;
     }
-   
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .purpose-grid {
         display: flex;
         flex-wrap: wrap;
