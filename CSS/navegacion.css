@@ -98,7 +98,7 @@ body {
 /* Hover en los enlaces */
 
 .aBarra:hover {
-    background-color: white;
+    background-color:#AF6894;
     color: #B08EA2;
     transform: scale(1.1);
 }
@@ -106,11 +106,9 @@ body {
 
 /* Página activa - Fondo blanco y texto oscuro */
 
-.aBarra.active {
-    margin-top: 40px;
-    padding-bottom: 50px;
-    background-color: white;
-    color: #B08EA2;
+.aBarra .active {
+    background-color: #B08EA2;
+    color: white;
 }
 
 

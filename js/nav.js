@@ -7,32 +7,32 @@ navLinks.forEach(link => {
 
         switch (currentPath) {
             case "index.html":
-                link.style.backgroundColor = "#B08EA2";
+                link.style.backgroundColor = "#BE6E87";
                 link.style.color = "#ffffff";
                 break;
             case "perfil.html":
-                link.style.backgroundColor = "#ffffff";
-                link.style.color = "black";
+                link.style.backgroundColor = "#BE6E87";
+                link.style.color = "#ffffffk";
                 break;
             case "servicios.html":
-                link.style.backgroundColor = "#FFFFFF";
-                link.style.color = "black";
+                link.style.backgroundColor = "#BE6E87";
+                link.style.color = "#ffffff";
                 break;
             case "productos.html":
-                link.style.backgroundColor = "#ffffff";
-                link.style.color = "black";
+                link.style.backgroundColor = "#BE6E87";
+                link.style.color = "#ffffff";
                 break;
             case "nosotros.html":
                 link.style.backgroundColor = "#BE6E87";
-                link.style.color = "#FFFFFF";
+                link.style.color = "#ffffff";
                 break;
             case "pagos.html":
-                link.style.backgroundColor = "#FFFFFF";
-                link.style.color = "black";
+                link.style.backgroundColor = "#BE6E87";
+                link.style.color = "#ffffff";
                 break;
             case "contactenos.html":
-                link.style.backgroundColor = "#FFFFFF";
-                link.style.color = "black";
+                link.style.backgroundColor = "#BE6E87";
+                link.style.color = "#ffffff";
                 break;
             case "inicioSesion.html":
                 link.style.backgroundColor = "#F4F4F400";
@@ -40,8 +40,8 @@ navLinks.forEach(link => {
                 break;
 
             default:
-                link.style.backgroundColor = "#FFFFFF";
-                link.style.color = "#B08EA2";
+                link.style.backgroundColor = "#BE6E87";
+                link.style.color = "#ffffff";
 
         }
     }
