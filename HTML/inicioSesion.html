@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <title>PatuSalud</title>
     <link rel="icon" type="image/x-icon" href="../img/Cerebro_Mesa de trabajo 1.png">
 </head>
- 
+
 <body>
     <!-- Barra de Navegación -->
     <nav class="navBarra">
@@ -18,17 +18,17 @@
         <div class="nav-brand">
             <img src="../img/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
         </div>
- 
+
         <!-- Botón de menú (icono hamburguesa) -->
         <div class="nav-toggle" id="navToggle">
             <img src="../img/f.png" alt="Menú" class="hamburger-icon">
         </div>
- 
+
         <!-- Enlaces del menú -->
         <div class="nav-links" id="navLinks">
             <a href="../index.html" class="aBarra" id="inicio">Inicio</a>
             <a href="./perfil.html" class="aBarra" id="perfil">Perfil</a>
-            <a href="./servicios.html" class="aBarra" id="servicios">Servicios</a>
+            <a href="./servicios.html" class="aBarra" id="Citas">Citas</a>
             <a href="./productos.html" class="aBarra" id="productos">Productos</a>
             <a href="./nosotros.html" class="aBarra optionSelect" id="nosotros">Conócenos</a>
             <a href="./pagos.html" class="aBarra" id="pagos">Pagos</a>
@@ -42,7 +42,7 @@
             </a>
         </div>
     </nav>
- 
+
     <div class="container" id="container">
         <!-- Imagen lado izquierdo -->
         <div class="left-side">
@@ -53,19 +53,19 @@
                 <p>Inicia sesión para continuar</p>
             </div>
         </div>
- 
+
         <!-- Formulario lado derecho -->
         <div class="right-side">
             <div class="card">
                 <div class="card-header">
                     <h2 id="form-title">Iniciar Sesión</h2>
- 
+
                 </div>
                 <p class="card-description" id="form-description">Ingresa tus credenciales para acceder</p>
- 
+
                 <!-- Contenedor de alerta -->
                 <div id="alert-container"></div>
- 
+
                 <!-- Formulario de Iniciar Sesión -->
                 <form class="login-form" id="login-form" onsubmit="handleSubmit(event)">
                     <div class="input-group">
@@ -83,7 +83,7 @@
                     <button class="submit-btn" type="submit">Iniciar Sesión</button><br><br>
                     <button type="button" onclick="toggleForm()">Registrarse</button>
                 </form>
- 
+
                 <div id="register-fields" style="display: none;">
                     <!-- Formulario de Registro -->
                     <form class="register-form" id="register-form" onsubmit="handleSubmit(event)">
@@ -122,10 +122,10 @@
             </div>
         </div>
     </div>
- 
+
     <script src="../js/nav.js"></script>
     <script src="../js/inicioSecion.js"></script>
- 
+
 </body>
- 
+
 </html>
