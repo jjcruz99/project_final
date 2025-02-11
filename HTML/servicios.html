@@ -19,6 +19,8 @@
 
     <title>PatuSalud</title>
     <link rel="icon" type="image/x-icon" href="../img/Cerebro_Mesa de trabajo 1.png">
+    <!-- Font Awesome CDN (para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -50,34 +52,33 @@
         </div>
     </nav>
 
-    
+
     <section class="servicios">
         <div class="container text-center">
             <div class="row align-items-start">
                 <div class="col">
                     <h2>Calendario</h2>
-                    <div class="contenedor-citas"> 
+                    <div class="contenedor-citas">
                         <div class="cita">
-                            <!-- Calendly una cita especifica-->  
-                            <div class="calendly-inline-widget" data-url="https://calendly.com/katherinnecardenas16/una-cita-de-corazon" 
-                            style="min-width:320px;height:700px;">
-                           </div>
-                           
-                           <!-- Calendly una opcion de escoger cita-->
+                            <!-- Calendly una cita especifica-->
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/katherinnecardenas16/una-cita-de-corazon" style="min-width:320px;height:700px;">
+                            </div>
+
+                            <!-- Calendly una opcion de escoger cita-->
                             <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/katherinnecardenas16" style="min-width:320px;height:700px;"> </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <h2>Próximas Citas</h2>
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/TU_USUARIO" style="min-width:320px;height:630px;"></div>                    
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/TU_USUARIO" style="min-width:320px;height:630px;"></div>
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
-          <!-- Footer -->
-   
+    <!-- Footer -->
+
     <!-- Boton de ayuda -->
     <div class="floating-help">
         <button class="help-button">
@@ -95,20 +96,41 @@
     <script src="../js/servicios.js"></script>
     <!---Este es el script de calendly directamente-->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-      <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-logo">
-            <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+            </div>
+
+            <!-- Información del footer: email, teléfono, ubicación -->
+            <div class="footer-info">
+                <div class="footer-info-top">
+                    <p>Email: patusalud@gmail.com | Teléfono: (+57) 320-458-1234 | Ubicación: Medellín, Antioquia</p>
+                </div>
+                <div class="footer-info-bottom">
+                    <p>&copy; 2025 Patu Salud.</p>
+                </div>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/1234567898" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
         </div>
-        <div class="footer-info">
-            <p>Email: patusalud@gmail.com</p>
-            <p>Teléfono: 1234567898</p>
-            <p>Ubicación: Medellín, Antioquia</p>
-            <p>&copy; 2025 Patu Salud.</p>
-        </div>
-    </div>
-  </footer>
+    </footer>
 
 </body>
 

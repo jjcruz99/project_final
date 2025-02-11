@@ -1,5 +1,5 @@
 /* --------------- VARIABLES GLOBALES --------------- */
- 
+
 :root {
     --primary-color: #647E92;
     --Nav-Color: #AF6894;
@@ -12,26 +12,26 @@
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --help-button-color: #7FD7E3;
 }
- 
- 
+
+
 /* --------------- FUENTES --------------- */
- 
+
 .poppins-thin {
     font-family: "Poppins", serif;
     font-weight: 50;
     font-style: normal;
 }
- 
+
 .poppins-regular {
     font-family: "Poppins", serif;
     font-weight: 100;
     font-style: normal;
     font-size: 26px;
 }
- 
- 
+
+
 /* --------------- HEADER --------------- */
- 
+
 .encabezado {
     background-color: #333;
     color: #fff;
@@ -40,28 +40,28 @@
     justify-content: space-between;
     align-items: center;
 }
- 
+
 .encabezado .logo {
     font-size: 24px;
     font-weight: bold;
 }
- 
+
 .encabezado .navegacion a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
 }
- 
- 
+
+
 /* --------------- CONTENIDO PRINCIPAL --------------- */
- 
+
 .contenido-principal {
     padding: 20px;
 }
- 
- 
+
+
 /* --------------- CONTENEDOR PERFIL --------------- */
- 
+
 .contenedor-perfil {
     display: flex;
     justify-content: space-around;
@@ -69,12 +69,12 @@
     background-color: #fff;
     padding: 10px;
 }
- 
+
 .perfil {
     text-align: center;
     flex: 1;
 }
- 
+
 .perfil img {
     width: 230px;
     height: 230px;
@@ -83,50 +83,51 @@
     object-position: center;
     margin-top: 10px;
 }
- 
+
 h3 {
     color: #647e92;
     text-align: center;
     padding: 10px;
 }
- 
+
 p {
-    text-align: center;
+    font-size: 14px;
+    text-align: justify;
     padding: 10px;
 }
- 
+
 .nombre {
     color: #647e92;
     font-size: 24px;
     font-weight: bold;
     /* Puedes cambiar "bold" por un valor numérico si quieres más control, por ejemplo, 600 o 700 */
 }
- 
+
 .edad {
     color: #647e92;
     font-size: 16px;
     margin-bottom: 20px;
 }
- 
+
 .perfil .estrellas {
     color: gold;
     margin-top: 5px;
     font-size: 35px;
 }
- 
- 
+
+
 /* --------------- CAJA DE INFORMACIÓN --------------- */
- 
+
 .caja-info {
     text-align: justify;
     background-color: #f4f4f4;
     width: 30%;
     padding: 20px;
 }
- 
- 
+
+
 /* --------------- SEPARADOR --------------- */
- 
+
 .separador {
     background-color: #fff;
     margin-left: 15px;
@@ -136,7 +137,7 @@ p {
     border: 3px solid var(--Nav-Color);
     border-radius: 15px;
 }
- 
+
 .rectangulo {
     background-color: #fff;
     padding: 10px;
@@ -148,20 +149,20 @@ p {
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
 }
- 
+
 .separador :hover {
     border: 3px solid #647e92;
     width: 100%;
     color: #fff;
     background-color: var(--Nav-Color);
 }
- 
- 
+
+
 /* --------------- TAREAS --------------- */
- 
- 
+
+
 /* Carrusel */
- 
+
 .carrusel {
     margin-left: 20px;
     margin-right: 20px;
@@ -182,10 +183,10 @@ p {
     box-sizing: border-box;
     /* Asegura que el padding y borde se incluyan en el cálculo del ancho */
 }
- 
- 
+
+
 /* Contenedor de las tarjetas */
- 
+
 .tareas {
     display: flex;
     gap: 20px;
@@ -199,10 +200,10 @@ p {
     transform: translateX(0);
     /* Posición inicial */
 }
- 
- 
+
+
 /* Cada tarjeta */
- 
+
 .tarea {
     width: 250px;
     /* Tamaño fijo para cada tarjeta */
@@ -221,30 +222,30 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
 }
- 
- 
+
+
 /* Efecto al hacer hover sobre la tarjeta */
- 
+
 .tarea:hover {
     transform: translateY(-10px);
     /* Movimiento hacia arriba */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     /* Sombra más grande al hacer hover */
 }
- 
+
 .tarea img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
- 
+
 .tarea .nombre {
     margin-top: 10px;
     font-weight: bold;
     font-size: 20px;
 }
- 
+
 .boton {
     display: inline-block;
     margin-top: 10px;
@@ -255,14 +256,14 @@ p {
     border-radius: 5px;
     cursor: pointer;
 }
- 
+
 .boton:hover {
     background-color: #bb6c93;
 }
- 
- 
+
+
 /* Botones de las flechas */
- 
+
 .flecha {
     background-color: var(--Nav-Color);
     color: white;
@@ -275,22 +276,22 @@ p {
     transform: translateY(-50%);
     z-index: 1;
 }
- 
+
 .flecha.izquierda {
     left: 10px;
 }
- 
+
 .flecha.derecha {
     right: 10px;
 }
- 
+
 .flecha:hover {
     background-color: #7fd7e39f;
 }
- 
- 
+
+
 /* --------------- MODAL --------------- */
- 
+
 .modal {
     display: none;
     position: fixed;
@@ -302,7 +303,7 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
     padding-top: 60px;
 }
- 
+
 .modal-contenido {
     flex-direction: column;
     justify-content: center;
@@ -314,25 +315,25 @@ p {
     width: 80%;
     border-radius: 8px;
 }
- 
+
 .modal-contenido ul {
     padding: 15px;
 }
- 
+
 .cerrar {
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
     float: right;
 }
- 
+
 .cerrar:hover,
 .cerrar:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
- 
+
 .boton-agendar {
     align-self: center;
     display: inline-block;
@@ -343,17 +344,17 @@ p {
     border-radius: 5px;
     margin-top: 15px;
 }
- 
+
 .boton-agendar:hover {
     background-color: #bb6c93;
 }
- 
- 
+
+
 /* --------------- MEDIA QUERIES (RESPONSIVE) --------------- */
- 
- 
+
+
 /* Media Queries (Responsivo) */
- 
+
 @media (max-width: 768px) {
     .carrusel {
         margin-left: 10px;
@@ -408,7 +409,7 @@ p {
         font-size: 14px;
     }
 }
- 
+
 @media (max-width: 480px) {
     .carrusel {
         margin-left: 5px;

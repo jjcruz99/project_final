@@ -1,61 +1,119 @@
-/* Footer */
+/* Estilo general para el footer */
 
 .footer {
     background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
-    padding: 2rem;
-    margin-top: 3rem;
-    color: white;
-  }
-  
-  /* .footer-content {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    gap: 4rem;
-  } */
-  .footer-content {
+    padding: 10px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    gap: 4rem;
-  }
-  
-  .footer-logo {
-    grid-column: 1;
-  }
-  
-  .footer-logo-img {
-    height: 180px;
-  }
-  
-  .footer-info {
-    grid-column: 2;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 2rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .footer-info p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .footer-copyright {
-    grid-column: 3;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+
+/* Logo */
+
+.footer-logo {
+    flex: 1;
+}
+
+.footer-logo-img {
+    max-height: 40px;
+    /* Ajustamos la altura del logo */
+}
+
+
+/* Información del footer */
+
+.footer-info {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-info-top,
+.footer-info-bottom {
+    margin: 5px 0;
+}
+
+.footer-info-top {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-info-bottom {
+    font-size: 13px;
+    color: black;
+}
+
+
+/* Redes sociales */
+
+.footer-social {
+    flex: 1;
     text-align: right;
-    padding-left: 2rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 3rem;
-    color: white;
-  }
-  
+}
+
+.footer-social-icon {
+    font-size: 30px;
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social-icon:hover {
+    color: #7fd7e3;
+    /* Cambia a morado cuando el mouse pasa sobre los iconos */
+}
+
+
+/* Media Query para pantallas más pequeñas (Celulares) */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        /* Coloca los elementos en una columna */
+        align-items: center;
+        width: 100%;
+        /* Ancho completo */
+    }
+    .footer-logo {
+        margin-bottom: 10px;
+        /* Separa un poco el logo de la información */
+    }
+    .footer-info {
+        margin-bottom: 10px;
+        /* Separación entre información y redes sociales */
+    }
+    .footer-social {
+        text-align: center;
+        /* Centra los iconos de redes sociales */
+        margin-top: 10px;
+    }
+    .footer-social-icon {
+        font-size: 28px;
+        /* Reducimos el tamaño de los iconos en móviles */
+        margin-left: 10px;
+        /* Reducimos el espacio entre los iconos */
+    }
+}
+
+
+/* Media Query para tabletas */
+
+@media (max-width: 1024px) {
+    .footer-content {
+        width: 90%;
+        /* Ajustamos el ancho para tabletas */
+    }
+    .footer-social-icon {
+        font-size: 32px;
+        /* Los iconos son un poco más grandes en tabletas */
+    }
+}

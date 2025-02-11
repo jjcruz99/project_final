@@ -7,7 +7,7 @@ navLinks.forEach(link => {
 
         switch (currentPath) {
             case "index.html":
-                link.style.backgroundColor = "#B08EA2";
+                link.style.backgroundColor = "#bfb1b3";
                 link.style.color = "#ffffff";
                 break;
             case "perfil.html":
