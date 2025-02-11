@@ -6,7 +6,6 @@
 /* css carrito */
 
 .container-principal {
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     /* border: 1px solid black; */
