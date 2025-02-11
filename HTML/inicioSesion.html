@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="../CSS/inicioSecion.css">
-    <link rel="stylesheet" href="../CSS/navegacion.css">
+    <link rel="stylesheet" href="../css/inicioSecion.css">
+    <link rel="stylesheet" href="../css/navegacion.css">
     <title>PatuSalud</title>
     <link rel="icon" type="image/x-icon" href="../img/Cerebro_Mesa de trabajo 1.png">
 </head>
-
+ 
 <body>
     <!-- Barra de Navegación -->
     <nav class="navBarra">
@@ -18,12 +18,12 @@
         <div class="nav-brand">
             <img src="../img/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
         </div>
-
+ 
         <!-- Botón de menú (icono hamburguesa) -->
         <div class="nav-toggle" id="navToggle">
             <img src="../img/f.png" alt="Menú" class="hamburger-icon">
         </div>
-
+ 
         <!-- Enlaces del menú -->
         <div class="nav-links" id="navLinks">
             <a href="../index.html" class="aBarra" id="inicio">Inicio</a>
@@ -42,7 +42,7 @@
             </a>
         </div>
     </nav>
-
+ 
     <div class="container" id="container">
         <!-- Imagen lado izquierdo -->
         <div class="left-side">
@@ -53,19 +53,19 @@
                 <p>Inicia sesión para continuar</p>
             </div>
         </div>
-
+ 
         <!-- Formulario lado derecho -->
         <div class="right-side">
             <div class="card">
                 <div class="card-header">
                     <h2 id="form-title">Iniciar Sesión</h2>
-                    <button class="dark-mode-button" onclick="toggleDarkMode()">🌙</button>
+ 
                 </div>
                 <p class="card-description" id="form-description">Ingresa tus credenciales para acceder</p>
-
+ 
                 <!-- Contenedor de alerta -->
                 <div id="alert-container"></div>
-
+ 
                 <!-- Formulario de Iniciar Sesión -->
                 <form class="login-form" id="login-form" onsubmit="handleSubmit(event)">
                     <div class="input-group">
@@ -74,13 +74,16 @@
                     </div>
                     <div class="input-group">
                         <label for="password">Contraseña</label>
-                        <input id="password" type="password" required oninput="checkPasswordStrength()" />
+                        <div class="password-container">
+                            <input id="password" type="password" required oninput="checkPasswordStrength()" />
+                            <span class="toggle-password" id="toggle-password" onclick="togglePasswordVisibility('password')">👁️</span>
+                        </div>
                         <div class="password-strength" id="password-strength"></div>
                     </div>
                     <button class="submit-btn" type="submit">Iniciar Sesión</button><br><br>
                     <button type="button" onclick="toggleForm()">Registrarse</button>
                 </form>
-
+ 
                 <div id="register-fields" style="display: none;">
                     <!-- Formulario de Registro -->
                     <form class="register-form" id="register-form" onsubmit="handleSubmit(event)">
@@ -98,12 +101,18 @@
                         </div>
                         <div class="input-group">
                             <label for="register-password">Contraseña</label>
-                            <input id="register-password" type="password" required oninput="checkPasswordStrength()" />
+                            <div class="password-container">
+                                <input id="register-password" type="password" required oninput="checkPasswordStrength()" />
+                                <span class="toggle-password" id="toggle-register-password" onclick="togglePasswordVisibility('register-password')">👁️</span>
+                            </div>
                             <div class="password-strength" id="register-password-strength"></div>
                         </div>
                         <div class="input-group">
                             <label for="confirm-password">Verificar Contraseña</label>
-                            <input id="confirm-password" type="password" required oninput="checkPasswordMatch()" />
+                            <div class="password-container">
+                                <input id="confirm-password" type="password" required oninput="checkPasswordMatch()" />
+                                <span class="toggle-password" id="toggle-confirm-password" onclick="togglePasswordVisibility('confirm-password')">👁️</span>
+                            </div>
                             <div class="error-message" id="password-error">Las contraseñas no coinciden</div>
                         </div><br>
                         <button class="submit-btn" type="submit">Registrarse</button><br><br>
@@ -113,10 +122,10 @@
             </div>
         </div>
     </div>
-
-    <script src="../JS/nav.js"></script>
-    <script src="../JS/inicioSecion.js"></script>
-
+ 
+    <script src="../js/nav.js"></script>
+    <script src="../js/inicioSecion.js"></script>
+ 
 </body>
-
+ 
 </html>

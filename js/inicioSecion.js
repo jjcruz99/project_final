@@ -224,3 +224,15 @@ function hideLogoutOption() {
     const logoutOption = document.getElementById('logout-option');
     logoutOption.style.display = 'none'; // Oculta la opción
 }
+
+function togglePasswordVisibility(fieldId) {
+    var passwordField = document.getElementById(fieldId);
+    var eyeIcon = document.getElementById('toggle-' + fieldId);
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.innerHTML = "🙈"; // Cambia el icono a "cerrado"
+    } else {
+        passwordField.type = "password";
+        eyeIcon.innerHTML = "👁️"; // Cambia el icono a "abierto"
+    }
+}
