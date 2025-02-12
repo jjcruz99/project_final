@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #647E92;
+    --Nav-Color: #AF6894;
+    --secondary-color: #455970;
+    --background-color: #b08ea21e;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --spacing-base: 1rem;
+    --border-radius: 10px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --help-button-color: #7FD7E3;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    /* Usar el color de fondo */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    width: 48%;
+    background-color: var(--card-background);
+    /* Fondo de la tarjeta */
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: var(--text-color);
+    /* Usar color de texto */
+}
+
+.profile-card p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: var(--secondary-color);
+    /* Color secundario */
+}
+
+.profile-info {
+    text-align: left;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    margin-top: 20px;
+}
+
+.profile-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: var(--text-color);
+    /* Color de texto */
+}
+
+.edit-section {
+    width: 48%;
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+.edit-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+    /* Color de texto */
+}
+
+.edit-section input {
+    width: 48%;
+    padding: 10px;
+    margin: 10px 1%;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.file-input {
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.file-input input {
+    font-size: 14px;
+}
+
+.edit-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    /* Usar color primario */
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.edit-section button:hover {
+    background-color: #5c7480;
+    /* Variación del color primario */
+}
+
+.logout-btn {
+    width: 100%;
+    width: 100%;
+    padding: 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Diseño responsivo para móviles */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .profile-card,
+    .edit-section {
+        width: 100%;
+    }
+    .edit-section input {
+        width: 100%;
+    }
+}
