@@ -1,11 +1,11 @@
 {
     "items": [{
             "name": "Mats de yoga",
-            "img": "https://www.protekgr.com/wp-content/uploads/2015/02/0.25-yoga-mats.jpg",
+            "img": "https://sanisidrolonasar.vtexassets.com/arquivos/ids/157509-800-auto?v=637645485170970000&width=800&height=auto&aspect=true",
             "description": "antideslizantes, ecológicos, gruesos, de viaje",
             "precio": "76.500",
             "cantidad": 10,
-            "referencia":1000
+            "referencia": 1000
         },
         {
             "name": "Bloques de yoga",
@@ -13,7 +13,7 @@
             "description": "Bloque en espuma máximo confort",
             "precio": "25.990",
             "cantidad": 10,
-            "referencia":1001
+            "referencia": 1001
         },
         {
             "name": "Cinturones de yoga",
@@ -21,7 +21,7 @@
             "description": "Para mejorar la flexibilidad y las posturas",
             "precio": "99.908",
             "cantidad": 10,
-            "referencia":1002
+            "referencia": 1002
         },
         {
             "name": "Toallas antideslizantes",
@@ -29,7 +29,7 @@
             "description": "Ideales para hot yoga o prácticas intensas",
             "precio": "134.000",
             "cantidad": 10,
-            "referencia":1003
+            "referencia": 1003
         },
         {
             "name": "Cuerdas con contador de saltos",
@@ -37,7 +37,7 @@
             "description": "Cuerda para saltar",
             "precio": "120.000",
             "cantidad": 10,
-            "referencia":1004
+            "referencia": 1004
         },
         {
             "name": "Step aeróbico",
@@ -45,7 +45,7 @@
             "description": "Step graduable",
             "precio": "100.000",
             "cantidad": 10,
-            "referencia":1005
+            "referencia": 1005
         },
         {
             "name": "Mancuernas ajustables",
@@ -53,7 +53,7 @@
             "description": "Mancuernas con discos ajustables",
             "precio": "173.000",
             "cantidad": 10,
-            "referencia":1006
+            "referencia": 1006
         },
         {
             "name": "Pesa rusa",
@@ -61,7 +61,7 @@
             "description": "Mancuernas",
             "precio": "130.000",
             "cantidad": 10,
-            "referencia":1007
+            "referencia": 1007
         },
         {
             "name": "Difusores",
@@ -69,7 +69,7 @@
             "description": "Difusores aromatizar para el ambiente",
             "precio": "293.000",
             "cantidad": 10,
-            "referencia":1008
+            "referencia": 1008
         },
         {
             "name": "Aceites esenciales",
@@ -77,7 +77,7 @@
             "description": "Aceites para aromaterapia",
             "precio": "83.000",
             "cantidad": 10,
-            "referencia":1009
+            "referencia": 1009
         },
         {
             "name": "Omega 3",
@@ -85,7 +85,7 @@
             "description": "Suplemento",
             "precio": "105.000",
             "cantidad": 10,
-            "referencia":1010
+            "referencia": 1010
         },
         {
             "name": "Velas aromáticas",
@@ -93,7 +93,7 @@
             "description": "Fragancias calmantes como lavanda o eucalipto",
             "precio": "38.000",
             "cantidad": 10,
-            "referencia":1011
+            "referencia": 1011
         }
     ]
 }

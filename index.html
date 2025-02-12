@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="./css/navegacion.css">
+    <link rel="stylesheet" href="./css/Inicio.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <!-- Tipos de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>PatuSalud</title>
+    <link rel="icon" type="image/x-icon" href="img/Cerebro_Mesa de trabajo 1.png">
+    <!-- Font Awesome CDN (para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navBarra">
+        <!-- Logo -->
+        <div class="nav-brand">
+            <img src="img/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
+        </div>
+
+        <!-- Botón de menú (icono hamburguesa) -->
+        <div class="nav-toggle" id="navToggle">
+            <img src="img/f.png" alt="Menú" class="hamburger-icon">
+        </div>
+
+        <!-- Enlaces del menú -->
+        <div class="nav-links" id="navLinks">
+            <a href="#" class="aBarra" id="inicio">Inicio</a>
+            <a href="./html/perfil.html" class="aBarra" id="perfil">Perfil</a>
+            <a href="./html/servicios.html" class="aBarra" id="servicios">Citas</a>
+            <a href="./html/productos.html" class="aBarra" id="productos">Productos</a>
+            <a href="./html/nosotros.html" class="aBarra optionSelect" id="nosotros">Conócenos</a>
+            <a href="./html/pagos.html" class="aBarra" id="pagos">Pagos</a>
+            <a href="./html/contactenos.html" class="aBarra" id="contactanos">Contáctanos</a>
+            <a href="./html/inicioSesion.html" class="aBarra" id="aBarrauser">
+                <img src="./img/user2.png" class="IconUser" id="aBarrauser" alt="Icono de usuario">
+            </a>
+        </div>
+    </nav>
+    <!-- Sección Banner con CTA -->
+    <section class="hero">
+        <div class="video-background">
+            <!-- Sección CTA mejorada -->
+            <div class="cta-section">
+                <div>
+                    <p class="cta-text">Encuentra apoyo profesional</p>
+                    <p class="cta-subtext">y recursos para tu desarrollo personal.</p>
+                </div>
+                <button class="cta-button" onclick="window.location.href='./html/inicioSesion.html'">
+                    Agenda tu cita
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="wave-separator"></div>
+    </section>
+    <!-- Tips Section Salud Mental -->
+    <section class="tips-section">
+        <h2 class="tips-title">Tips para tu Bienestar Mental</h2>
+        <p class="section-description">Pequeños pasos diarios hacia una mente más saludable</p>
+        <div class="tips-container">
+            <!-- Meditacion Card -->
+            <div class="tip-card">
+                <div class="tip-card-inner">
+                    <div class="tip-front">
+                        <img src="./img/Inicio/Meditación guiada.jpg" alt="Meditación" class="tip-icon">
+                        <h3>Meditación Diaria</h3>
+                        <span class="tip-expand">Click para más info</span>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Meditación Diaria</h3>
+                        <p>Dedica 10 minutos cada día a la meditación. Esto puede:</p>
+                        <ul>
+                            <li>Reducir el estrés</li>
+                            <li>Mejorar la concentración</li>
+                            <li>Aumentar la claridad mental</li>
+                            <li>Promover el bienestar emocional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Ejercicio Card -->
+            <div class="tip-card">
+                <div class="tip-card-inner">
+                    <div class="tip-front">
+                        <img src="./img/Inicio/descarga (1).jpg" alt="Ejercicio" class="tip-icon">
+                        <h3>Ejercicio Regular</h3>
+                        <span class="tip-expand">Click para más info</span>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Ejercicio Regular</h3>
+                        <p>El movimiento diario es clave para tu bienestar:</p>
+                        <ul>
+                            <li>30 minutos de actividad diaria</li>
+                            <li>Ejercicios que disfrutes</li>
+                            <li>Rutina constante</li>
+                            <li>Combina cardio y fuerza</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Dormir Card -->
+            <div class="tip-card">
+                <div class="tip-card-inner">
+                    <div class="tip-front">
+                        <img src="./img/Inicio/descarga (2).jpg" alt="Sueño" class="tip-icon">
+                        <h3>Hábitos de Sueño</h3>
+                        <span class="tip-expand">Click para más info</span>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Hábitos de Sueño</h3>
+                        <p>Un buen descanso es fundamental:</p>
+                        <ul>
+                            <li>Horario regular de sueño</li>
+                            <li>Ambiente relajante</li>
+                            <li>Evitar pantallas</li>
+                            <li>Rutina nocturna</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Conexión social Card -->
+            <div class="tip-card">
+                <div class="tip-card-inner">
+                    <div class="tip-front">
+                        <img src="./img/Inicio/descarga3.jpg" alt="Conexión" class="tip-icon">
+                        <h3>Conexión Social</h3>
+                        <span class="tip-expand">Click para más info</span>
+                    </div>
+                    <div class="tip-back">
+                        <h3>Conexión Social</h3>
+                        <p>Fortalece tus vínculos sociales:</p>
+                        <ul>
+                            <li>Tiempo con amigos</li>
+                            <li>Actividades grupales</li>
+                            <li>Escucha activa</li>
+                            <li>Cultivar relaciones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- aticulos Section -->
+    <section class="services">
+        <h2 style="margin-top: 80px;">Artículos Destacados</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_698449-MCO79483193632_102024-F.webp" alt="Artículos de Relajación">
+                </div>
+                <h3>Yoga</h3>
+                <p>Productos seleccionados para tu bienestar mental</p>
+                <a href="./html/productos.html" class="service-button">Ver más <i class="fas fa-arrow-right"></i></a>
+                </a>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_777274-MCO77416833165_072024-F.webp" alt="Ejercicios">
+                </div>
+                <h3>Ejercicios</h3>
+                <p>Prácticas para mantener una mente saludable</p>
+                <a href="./html/productos.html" class="service-button">Ver más <i class="fas fa-arrow-right"></i></a>
+                </a>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_945007-MCO79604865176_102024-F.webp" alt="Varios">
+                </div>
+                <h3>Varios</h3>
+                <p>Recursos de autoayuda y desarrollo personal</p>
+                <a href="./html/productos.html" class="service-button">Ver más <i class="fas fa-arrow-right"></i></a>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Archivos JS -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="./img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+            </div>
+
+            <!-- Información del footer: email, teléfono, ubicación -->
+            <div class="footer-info">
+                <div class="footer-info-top">
+                    <p>Email: patusalud@gmail.com | Teléfono: (+57) 320-458-1234 | Ubicación: Medellín, Antioquia</p>
+                </div>
+                <div class="footer-info-bottom">
+                    <p>&copy; 2025 Patu Salud.</p>
+                </div>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/1234567898" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/inicioSecion.js"></script>
+
+</body>
+
+</html>

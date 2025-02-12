@@ -80,7 +80,7 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 2px;
 }
 
 
@@ -100,7 +100,7 @@ body {
 .aBarra:hover {
     background-color: white;
     color: #B08EA2;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 
@@ -117,16 +117,19 @@ body {
 /* Icono de usuario */
 
 .IconUser {
-    padding: 3px 10px;
-    height: 35px;
+    margin-top: 5px;
+    height: 40px;
     width: auto;
+    filter: brightness(0) invert(1);
+    /* Convierte la imagen a blanco */
 }
 
 
 /* Hover del icono de usuario */
 
 .IconUser:hover {
-    transform: scale(1.2);
+    filter: none;
+    transform: scale(1.1);
 }
 
 
@@ -195,6 +198,86 @@ body {
 }
 
 
+/* Estilo para el contenedor del dropdown */
+
+.user-dropdown {
+    position: relative;
+    /* Necesario para posicionar el dropdown */
+}
+
+
+/* Estilo para la imagen del usuario */
+
+.IconUser {
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    display: block;
+    /* Asegura que no haya espacio adicional */
+    width: 40px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 40px;
+    /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte para ajustarse al contenedor */
+    border-radius: 50%;
+    /* Hace que la imagen sea redonda */
+    filter: none;
+    /* Asegura que la imagen se muestre correctamente */
+}
+
+
+/* Estilo para la opción de cerrar sesión */
+
+.logout-dropdown {
+    position: absolute;
+    /* Posiciona el dropdown de forma absoluta */
+    top: 50px;
+    /* Ajusta la posición hacia abajo */
+    right: 0;
+    /* Alinea a la derecha */
+    background-color: var(--card-background);
+    /* Color de fondo del dropdown */
+    box-shadow: var(--shadow);
+    /* Añade sombra */
+    border-radius: var(--border-radius);
+    /* Redondea las esquinas */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    display: none;
+    /* Inicialmente oculto */
+}
+
+
+/* Estilo para el botón de cerrar sesión */
+
+.logout-button {
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none;
+    /* Sin borde */
+    color: var(--text-color);
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+
+/* Hover sobre el botón de cerrar sesión */
+
+.logout-button:hover {
+    background-color: var(--primary-color);
+    /* Cambia el fondo al pasar el ratón */
+    color: white;
+    /* Cambia el color del texto al blanco */
+}
+
+
 /* Ajustes para responsive */
 
 @media (max-width: 768px) {
@@ -238,5 +321,24 @@ body {
     }
     #activePage {
         display: none !important;
+    }
+    /* --------------- Modificación para centrar el icono de usuario en pantallas pequeñas --------------- */
+    .navBarra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Para pantallas pequeñas, centrar el icono de usuario */
+    .IconUser {
+        margin-top: 0;
+        /* Elimina el margen superior */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        /* Asegura que el icono esté centrado */
+    }
+    /* Opcional: Si quieres centrar el menú de navegación cuando se hace responsive */
+    .nav-links {
+        text-align: center;
     }
 }
