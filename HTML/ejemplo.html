@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/informacionperfil.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Perfil del usuario -->
+        <div class="profile-card" id="profile-card">
+            <img src="" id="user-photo" alt="Foto de Usuario">
+            <h3 id="user-name">Nombre del Usuario</h3>
+            <div class="profile-info">
+                <p><strong>Correo: </strong><span id="user-email"></span></p>
+                <p><strong>Teléfono: </strong><span id="user-phone"></span></p>
+                <p><strong>Dirección: </strong><span id="user-address"></span></p>
+                <p><strong>Edad: </strong><span id="user-age"></span></p>
+                <p><strong>Motivo de consulta: </strong><span id="user-reason"></span></p>
+            </div>
+        </div>
+
+        <!-- Edición de perfil -->
+        <div class="edit-section" id="edit-section">
+            <h3>Editar Perfil</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <input type="text" id="edit-firstname" placeholder="Primer Nombre" required>
+                <input type="text" id="edit-secondname" placeholder="Segundo Nombre" required>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <input type="text" id="edit-lastname" placeholder="Apellido" required>
+                <input type="email" id="edit-email" placeholder="Nuevo Correo" required>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <input type="tel" id="edit-phone" placeholder="Nuevo Teléfono" required>
+                <input type="text" id="edit-address" placeholder="Nueva Dirección" required>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                <input type="text" id="edit-secondlastname" placeholder="Segundo Apellido" required>
+                <input type="number" id="edit-age" placeholder="Edad" required>
+            </div>
+
+            <div class="file-input">
+                <input type="file" id="edit-photo" accept="image/*" onchange="previewImage(event)">
+                <p>Selecciona una nueva imagen de perfil (opcional)</p>
+            </div>
+
+            <div>
+                <textarea id="edit-reason" placeholder="Motivo por el cual busca ayuda psicológica (opcional)" rows="4"></textarea>
+            </div>
+
+            <button id="save-btn" onclick="saveProfile()">Guardar Cambios</button>
+            <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="../js/informacionperfil.js"></script>
+</body>
+
+</html>
