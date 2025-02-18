@@ -1,8 +1,8 @@
 //Iniciamos almacenando constantes de flechas botones que vamos a ir utilizando y podemos interactuar con ellos
 
-const calendar = document.querySelector(".calendar"),
+const calendario = document.querySelector(".calendario"),
 date = document.querySelector(".date"),
-daysContainer = document.querySelector(".days"),
+dayscalendariocontainer = document.querySelector(".days"),
 prev = document.querySelector(".prev"),
 next = document.querySelector(".next"),
 todayBtn = document.querySelector(".today-btn"),
@@ -10,7 +10,7 @@ irtoBtn = document.querySelector(".irto-btn"),
 dateInput = document.querySelector(".date-input"),
 eventDay = document.querySelector(".event-day"),
 eventDate = document.querySelector(".event-date"),
-eventsContainer = document.querySelector(".events"),
+eventscalendariocontainer = document.querySelector(".events"),
 addEventBtn = document.querySelector(".add-event"),
 addEventWrapper = document.querySelector(".add-event-wrapper "),
 addEventCloseBtn = document.querySelector(".close "),
@@ -55,7 +55,7 @@ console.log(eventsArr);
 //luego calculamos los dias previos, los dias del mes actual y los dias siguientes
 // devuelve el dia de la semana en q acaba el mes  y finalemnrte
 // calcula cuantos dias tiene el proximo mes
-function initCalendar() {
+function initcalendario() {
 const firstDay = new Date(year, month, 1);
 const lastDay = new Date(year, month + 1, 0);
 const prevLastDay = new Date(year, month, 0);
@@ -64,13 +64,16 @@ const lastDate = lastDay.getDate();
 const day = firstDay.getDay();
 const nextDays = 7 - lastDay.getDay() - 1;
 
-//optiene el nombre del me sy lo ejecuta en el html
+//optiene el nombre del mes y lo ejecuta en el html,
+//Actualizando el mes con el año actual
 date.innerHTML = months[month] + " " + year;
 
 let days = ""; //
 
+//Genera los dias del calendario
+
 for (let x = day; x > 0; x--) {
-  days += <div class="day prev-date">${prevDays - x + 1}</div>;
+  days += `<div class="day prev-date">${prevDays - x + 1}</div>`;
 }
 
 for (let i = 1; i <= lastDate; i++) {
@@ -85,32 +88,34 @@ for (let i = 1; i <= lastDate; i++) {
       event = true;
     }
   });
-  if (
-    i === new Date().getDate() &&
+  // Recorre los días del mes actual y verifica si hay eventos programados en eventsArr
+
+  if ( i === new Date().getDate() &&
     year === new Date().getFullYear() &&
-    month === new Date().getMonth()
-  ) {
+    month === new Date().getMonth()) {
     activeDay = i;
     getActiveDay(i);
     updateEvents(i);
     if (event) {
-      days += <div class="day today active event">${i}</div>;
+      days += `<div class="day today active event">${i}</div>`;
     } else {
-      days += <div class="day today active">${i}</div>;
+      days += `<div class="day today active">${i}</div>`;
     }
   } else {
     if (event) {
-      days += <div class="day event">${i}</div>;
+      days += `<div class="day event">${i}</div>`;
     } else {
-      days += <div class="day ">${i}</div>;
+      days += `<div class="day ">${i}</div>`;
     }
+       //Resalta el día actual y muestra los días con eventos.
+
   }
 }
-
+//ahora se agregaran los dias de otro mespara completar el calendar
 for (let j = 1; j <= nextDays; j++) {
-  days += <div class="day next-date">${j}</div>;
+  days += `<div class="day next-date">${j}</div>`;
 }
-daysContainer.innerHTML = days;
+dayscalendariocontainer.innerHTML = days;
 addListner();
 }
 
@@ -121,7 +126,7 @@ if (month < 0) {
   month = 11;
   year--;
 }
-initCalendar();
+initcalendario();
 }
 
 function nextMonth() {
@@ -130,13 +135,13 @@ if (month > 11) {
   month = 0;
   year++;
 }
-initCalendar();
+initcalendario();
 }
 
 prev.addEventListener("click", prevMonth);
 next.addEventListener("click", nextMonth);
 
-initCalendar();
+initcalendario();
 
 //function to add active on day
 function addListner() {
@@ -150,10 +155,11 @@ days.forEach((day) => {
     days.forEach((day) => {
       day.classList.remove("active");
     });
-    //if clicked prev-date or next-date switch to that month
+    //si hace clic en prev-date o next-date cambia a ese mes
+    
     if (e.target.classList.contains("prev-date")) {
       prevMonth();
-      //add active to clicked day afte month is change
+      
       setTimeout(() => {
         //add active where no prev-date or next-date
         const days = document.querySelectorAll(".day");
@@ -186,12 +192,12 @@ days.forEach((day) => {
   });
 });
 }
-
+// Boton de hoy, vuelve al mes y dia actual cuando se presiona el boton
 todayBtn.addEventListener("click", () => {
 today = new Date();
 month = today.getMonth();
 year = today.getFullYear();
-initCalendar();
+initcalendario();
 });
 
 dateInput.addEventListener("input", (e) => {
@@ -211,6 +217,8 @@ if (e.inputType === "deleteContentBackward") {
 
 irtoBtn.addEventListener("click", irtoDate);
 
+// te lleva al me que agreagas y el año
+
 function irtoDate() {
 console.log("here");
 const dateArr = dateInput.value.split("/");
@@ -218,7 +226,7 @@ if (dateArr.length === 2) {
   if (dateArr[0] > 0 && dateArr[0] < 13 && dateArr[1].length === 4) {
     month = dateArr[0] - 1;
     year = dateArr[1];
-    initCalendar();
+    initcalendario();
     return;
   }
 }
@@ -226,14 +234,16 @@ alert("Por favor, complete todos los campos");
 }
 
 //function get active day day name and date and update eventday eventdate
+
 function getActiveDay(date) {
 const day = new Date(year, month, date);
-const dayName = day.toLocaleDateString("es-ES", { weekday: "short" });
+const dayName = day.toLocaleDateString("es-ES", { weekday: "long" });
 eventDay.innerHTML = dayName;
 eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
 
 //function update events when a day is active
+
 function updateEvents(date) {
 let events = "";
 eventsArr.forEach((event) => {
@@ -260,11 +270,14 @@ if (events === "") {
           <h3>No tienes citas agendadas</h3>
       </div>`;
 }
-eventsContainer.innerHTML = events;
+eventscalendariocontainer.innerHTML = events;
 saveEvents();
 }
 
-//function to add event
+// cuando se agregan esos datos al locastorage
+
+
+//function to añadir un evento
 addEventBtn.addEventListener("click", () => {
 addEventWrapper.classList.toggle("active");
 });
@@ -278,6 +291,7 @@ if (e.target !== addEventBtn && !addEventWrapper.contains(e.target)) {
   addEventWrapper.classList.remove("active");
 }
 });
+
 
 //allow 50 chars in eventtitle
 addEventTitle.addEventListener("input", (e) => {
@@ -395,7 +409,7 @@ if (!activeDayEl.classList.contains("event")) {
 });
 
 //function to delete event when clicked on event
-eventsContainer.addEventListener("click", (e) => {
+eventscalendariocontainer.addEventListener("click", (e) => {
 if (e.target.classList.contains("event")) {
   if (confirm("Are you sure you want to delete this event?")) {
     const eventTitle = e.target.children[0].children[1].innerHTML;

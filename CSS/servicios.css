@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  /* nice scroll bar */
+  /* Esta parte es para la barra de desplazamiento */
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -27,12 +27,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80; /* Ajusta esto según la altura de tu nav */
+    padding-top: 80px; /* Ajusta esto según la altura de tu nav */
     padding-bottom: 80px; /* Ajusta esto según la altura del footer */
     background-color: #e2e1dc;
-    background: url('../img/Agregar\ texto.png') no-repeat center center/cover;
+    background: url('../img/Calendario/Calendarioimagen.png') no-repeat center center/cover;
 }
-  .calendario-container {
+  .calendariocontainer {
     position: relative;
     width: 1200px;
     min-height: 850px;
@@ -60,7 +60,7 @@
     border-radius: 5px;
     background-color: #fff;
   }
-  /* set after behind the main element */
+
   .calendario::before,
   .calendario::after {
     content: "";
@@ -199,7 +199,7 @@
   .calendario .days .active.event {
     padding-bottom: 10px;
   }
-  .calendario .ir-to-today {
+  .calendario .irto-today {
     width: 100%;
     height: 50px;
     display: flex;
@@ -210,14 +210,14 @@
     margin-bottom: 20px;
     color: var(--primary-clr);
   }
-  .calendario .ir-to-today .irto {
+  .calendario .irto-today .irto {
     display: flex;
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
     border: 1px solid var(--primary-clr);
   }
-  .calendario .ir-to-today .irto input {
+  .calendario .irto-today .irto input {
     width: 100%;
     height: 30px;
     outline: none;
@@ -227,7 +227,7 @@
     color: var(--primary-clr);
     border-radius: 5px;
   }
-  .calendario .ir-to-today button {
+  .calendario .irto-today button {
     padding: 5px 10px;
     border: 1px solid var(--primary-clr);
     border-radius: 5px;
@@ -235,16 +235,16 @@
     cursor: pointer;
     color: var(--primary-clr);
   }
-  .calendario .ir-to-today button:hover {
+  .calendario .irto-today button:hover {
     color: #fff;
     background-color: var(--primary-clr);
   }
-  .calendario .ir-to-today .irto button {
+  .calendario .irto-today .irto button {
     border: none;
     border-left: 1px solid var(--primary-clr);
     border-radius: 0;
   }
-  .container .right {
+  .calendariocontainer .right {
     position: relative;
     width: 40%;
     min-height: 100%;
@@ -333,7 +333,7 @@
   .events .event:hover .event-time {
     color: #fff;
   }
-  /* add tick in event after */
+  /* Añadir la cita darle check */
   .events .event::after {
     content: "✓";
     position: absolute;
@@ -463,6 +463,7 @@
     justify-content: center;
     padding: 20px;
   }
+  
   .add-event-footer .add-event-btn {
     height: 40px;
     font-size: 1rem;
@@ -487,23 +488,25 @@
     body {
       align-items: flex-start;
       justify-content: flex-start;
-      background: url(../img/responsive.png) no-repeat top center/cover;
+      background: url(../img/Calendario/responsive.png) no-repeat top center/cover;
+      background-size: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+      background-position: center; /* Centra la imagen */
+      background-attachment: fixed; /* Opcional: hace que la imagen quede fija cuando se hace scroll */
     }
-    .container {
+    .calendariocontainer {
       min-height: 100vh;
       flex-direction: column;
       border-radius: 0;
     }
-    .container .left {
+    .calendariocontainer.left {
       width: 100%;
       height: 100%;
       padding: 20px 0;
     }
-    .container .right {
+    .calendariocontainer.right {
       width: 100%;
       height: 100%;
-      padding: 20px 0;
-      
+      padding: 10px 0;
     }
     .calendario::before,
     .calendario::after {
@@ -543,5 +546,11 @@
     .right .today-date {
       padding: 20px;
     }
+    body{
+      background-size: cover; /* La imagen se ajustará a la pantalla de cualquier dispositivo */
+      background-position: center; /* La imagen permanecerá centrada */
+
+    }
   }
+
   
