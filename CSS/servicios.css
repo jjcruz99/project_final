@@ -28,7 +28,7 @@
     justify-content: center;
     padding-bottom: 30px;
     background-color: #e2e1dc;
-    background: url('../img/Calendario/Calendarioimagen.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(175, 104, 148, 0.05), rgba(175, 104, 148, 0.7)), url('../img/Calendario/Calendarioimagen.png') no-repeat center center/cover;
 }
   .calendariocontainer {
     position: relative;
@@ -40,7 +40,7 @@
     display: flex;
   
     border-radius: 10px;
-    background-color: #b1b8bd;
+    background-color: rgb(236, 213, 221,0.7);
   }
   .left {
     width: 60%;
@@ -266,12 +266,12 @@
   .right .today-date .event-day { /*contendor derecho con la fecha y el dia*/
     font-size: 2rem;
     font-weight: 500;
-    color: #020202;
+    color: #AF6894;
   }
   .right .today-date .event-date { /*Fecha del dia en el otro contenedor*/
     font-size: 26px;
     font-weight: 400;
-    color: #AF8CA0;
+    color: #AF6894;
   }
   .events {
     width: 100%;
@@ -315,25 +315,25 @@
     margin-left: 20px;
   }
   .events .event i {
-    color: var(--primary-clr);
+    color: #AF6894;
     font-size: 0.5rem;
   }
   .events .event:hover i {
     color: #fff;
   }
   .events .event .event-time {
-    font-size: 0.8rem;
+    font-size: 25px;
     font-weight: 400;
-    color: #878895;
+    color: #AF6894;
     margin-left: 15px;
     pointer-events: none;
   }
   .events .event:hover .event-time {
     color: #fff;
   }
-  /* Añadir la cita darle check */
+
+    /* Añadir la cita darle check */
   .events .event::after {
-    content: "✓";
     position: absolute;
     top: 50%;
     right: 0;
@@ -346,9 +346,33 @@
     color: var(--primary-clr);
     transform: translateY(-50%);
   }
-  .events .event:hover::after {
-    display: flex;
-  }
+
+  
+  .delete-event{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 60px;  
+    height: 60px; 
+    background-color: #AF8CA0;
+    border: none;
+    border-radius: 50%; 
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+.delete-event:hover{
+    transform: scale(1.1);
+    background-color: #ffffff;
+    color: #AF8CA0;
+}
+  
   .add-event {
     position: absolute;
     bottom: 30px;
