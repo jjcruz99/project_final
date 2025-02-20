@@ -24,11 +24,9 @@
     position: relative;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px; /* Ajusta esto según la altura de tu nav */
-    padding-bottom: 80px; /* Ajusta esto según la altura del footer */
+    padding-bottom: 30px;
     background-color: #e2e1dc;
     background: url('../img/Calendario/Calendarioimagen.png') no-repeat center center/cover;
 }
@@ -42,7 +40,7 @@
     display: flex;
   
     border-radius: 10px;
-    background-color: #D7E2E6;
+    background-color: #b1b8bd;
   }
   .left {
     width: 60%;

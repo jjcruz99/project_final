@@ -10,7 +10,6 @@
     
     <!-- Archivos CSS -->
      <link rel="stylesheet" href="servicios.css" />
-     <link rel="stylesheet" href="../css/navegacion.css">
      <link rel="stylesheet" href="../CSS/servicios.css">
 
      <!-- Tipos de letra -->
@@ -19,32 +18,6 @@
      <title>Calendario de Citas</title>
   </head>
   <body>
-    <!-- Barra de Navegación -->
-    <nav class="navBarra">
-        <!-- Logo -->
-        <div class="nav-brand">
-            <img src="../img/Cerebro_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
-        </div>
-
-        <!-- Botón de menú (icono hamburguesa) -->
-        <div class="nav-toggle" id="navToggle">
-            <img src="../img/f.png" alt="Menú" class="hamburger-icon">
-        </div>
-
-        <!-- Enlaces del menú -->
-        <div class="nav-links" id="navLinks">
-            <a href="../index.html" class="aBarra" id="inicio">Inicio</a>
-            <a href="./perfil.html" class="aBarra" id="perfil">Perfil</a>
-            <a href="./servicios.html" class="aBarra" id="servicios">Citas</a>
-            <a href="./productos.html" class="aBarra" id="productos">Productos</a>
-            <a href="./nosotros.html" class="aBarra optionSelect" id="nosotros">Conócenos</a>
-            <a href="./pagos.html" class="aBarra" id="pagos">Pagos</a>
-            <a href="./contactenos.html" class="aBarra" id="contactanos">Contáctanos</a>
-            <a href="./inicioSesion.html" class="aBarra" id="aBarrauser">
-                <img src="../img/user2.png" class="IconUser" id="aBarrauser" alt="Icono de usuario">
-            </a>
-        </div>
-    </nav>
 
       <!--Seccion cita-->
       <!--Se traen iconos de flechitas para pasar entre meses -->
@@ -90,6 +63,9 @@
           <div class="event-day">Mie</div>
           <div class="event-date">12 Febrero del 2025</div>
         </div>
+
+        <!---Agrego el despliegue de las horas disponibles -->
+
         <div class="events"></div>
         <div class="add-event-wrapper">
           <div class="add-event-header">
@@ -98,23 +74,30 @@
           </div>
           <div class="add-event-body">
             <div class="add-event-input">
-              <input type="text" placeholder= "Nombre de la Cita" class="event-name" />
-            </div>
-            <div class="add-event-input">
-              <input
-                type="text"
-                placeholder="Hora de Inicio"
-                class="event-time-from"
-              />
-            </div>
-            <div class="add-event-input">
-              <input
-                type="text"
-                placeholder="Hora de Fin"
-                class="event-time-to"
-              />
+                <input list="text" id="event-text" placeholder="Nombre de Cita">
+                <datalist id="text">
+                  <option value="Psicoterapia Individual">Psicoterapia Individual</option>
+                  <option value="Psicoterapia de Parejas">Psicoterapia de Parejas</option>
+                  <option value="Terapia Familiar">Terapia Familiar</option>
+                  <option value="Evaluación Psicológica">Evaluación Psicológica</option>
+                  <option value="Terapia en Línea">Terapia en Línea</option>
+                  <option value="Terapia Infantil">Terapia Infantil</option>
+                  <option value="Mindfulness y Reducción de Estrés">Mindfulness y Reducción de Estrés</option>
+                </datalist>
             </div>
             
+            <div class="add-event-input">
+              <input list="horas" id="event-time" placeholder="Selecciona una hora">
+              <datalist id="horas">
+                <option value="09:00"></option>
+                <option value="10:00"></option>
+                <option value="11:00"></option>
+                <option value="12:00"></option>
+                <option value="14:00"></option>
+                <option value="15:00"></option>
+                <option value="16:00"></option>
+              </datalist>
+            </div>
           </div>
           <div class="add-event-footer">
             <button class="add-event-btn">Agendar Cita</button>
@@ -127,7 +110,6 @@
     </div>
 
   <!-- Archivos JS -->
-  <script src="../js/nav.js"></script>
   <script src="../js/servicios.js"></script>
 
   </body>
