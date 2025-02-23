@@ -1,5 +1,6 @@
 let contadorProductos = localStorage.getItem("canProductos");
 const notyf = new Notyf();
+
 function agregarArticulos() {
   
   let valorCompra = document.getElementById('valorCompra');
