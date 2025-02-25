@@ -150,9 +150,9 @@
 }
 
  ::placeholder {
-    color: #ffffff;
+    color: rgb(255, 255, 255, 0.5);
     opacity: 1;
-    font-size: 18px;
+    font-size: 50px;
 }
 
 
@@ -225,7 +225,7 @@
      ::placeholder {
         color: #ffffff;
         opacity: 1;
-        font-size: 16px;
+        font-size: 8px;
     }
     .con-img-redes {
         display: flex;
@@ -299,7 +299,7 @@
         width: 100%;
     }
     ::placeholder {
-        font-size: 18px;
+        font-size: 10px;
     }
 }
 
@@ -352,7 +352,7 @@
         width: 90%;
     }
     ::placeholder {
-        font-size: 20px;
+        font-size: 12px;
     }
 }
 
@@ -406,7 +406,7 @@
         font-size: 20px;
     }
     ::placeholder {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
 
@@ -449,6 +449,6 @@
         font-size: 20px;
     }
     ::placeholder {
-        font-size: 20px;
+        font-size: 14px;
     }
 }
