@@ -26,14 +26,15 @@
 
 .con-main-contactenos {
     /* border: 1px solid black; */
-    margin: 10px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     padding: 2px;
     font-family: "Poppins", serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     backdrop-filter: blur(10px);
-    background-image: url(../img/img_contactenos/armonia.jpeg);
+    background-image: url(../img/img_contactenos/psychologist.jpeg);
     background-size: cover;  
+    background-color: #FFFFFF;
 }
 
 /* contenedor hijo contactenos */

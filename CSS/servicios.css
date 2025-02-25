@@ -42,7 +42,7 @@ body {
   padding-bottom: 30px;
   background-color: #e2e1dc;
   padding-top: 70px;
-  background: linear-gradient(rgba(175, 104, 148, 0.05), rgba(175, 104, 148, 0.7)), url('../img/Calendario/Calendarioimagen.png') no-repeat center center/cover;
+  background: linear-gradient(rgba(175, 104, 148, 0.05), rgba(175, 104, 148, 0.6), rgba(175, 104, 148, 0.05));
 }
 .calendariocontainer {
   position: relative;
@@ -278,12 +278,12 @@ body {
   text-transform: capitalize;
 }
 .right .today-date .event-day { /*contendor derecho con la fecha y el dia*/
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 500;
   color: #AF6894;
 }
 .right .today-date .event-date { /*Fecha del dia en el otro contenedor*/
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   color: #AF6894;
 }
@@ -324,8 +324,8 @@ body {
   pointer-events: none;
 }
 .events .event .title .event-title {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 25px;
+  font-weight: 300;
   margin-left: 20px;
 }
 .events .event i {
@@ -336,7 +336,7 @@ body {
   color: #fff;
 }
 .events .event .event-time {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 400;
   color: #AF6894;
   margin-left: 15px;

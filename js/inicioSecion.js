@@ -60,7 +60,7 @@ async function handleSubmit(event) {
 
         if (usuario) {
             const userIcon = document.querySelector('.IconUser');
-            userIcon.src = usuario.photo || '../img/user2.png';
+            userIcon.src = usuario.photo || '../img/perfil/user (1).png';
             userIcon.alt = `Foto de ${usuario.fullname}`;
             localStorage.setItem('loggedUser', JSON.stringify(usuario));
             showAlert('¡Bienvenido!', 'success');
@@ -165,7 +165,7 @@ function checkPasswordMatch() {
 function logout() {
     localStorage.removeItem('loggedUser'); // Elimina el usuario de localStorage
     const userIcon = document.querySelector('.IconUser'); // Selecciona la imagen de usuario
-    userIcon.src = '../img/user2.png'; // Cambia de nuevo al icono original
+    userIcon.src = '../img/perfil/user (1).png'; // Cambia de nuevo al icono original
     userIcon.alt = 'Icono de usuario'; // Cambia el alt para accesibilidad
     showAlert('¡Has cerrado sesión!', 'success'); // Muestra un mensaje de éxito
     hideLogoutOption(); // Esconde la opción de cerrar sesión
@@ -204,7 +204,7 @@ window.onload = function() {
     if (loggedUser) {
         const user = JSON.parse(loggedUser);
         const userIcon = document.querySelector('.IconUser'); // Selecciona la imagen de usuario
-        userIcon.src = user.photo || '../img/user2.png'; // Cambia el icono a la foto del usuario o a la por defecto
+        userIcon.src = user.photo || '../img/perfil/user (1).png'; // Cambia el icono a la foto del usuario o a la por defecto
         userIcon.alt = `Foto de ${user.fullname}`; // Cambia el alt para accesibilidad
         showLogoutOption(); // Muestra la opción de cerrar sesión
     }
