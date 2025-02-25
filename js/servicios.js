@@ -107,20 +107,30 @@ function addListner() {
   });
 }
 
+
 // Actualizar los slots de tiempo disponibles
 function updateTimeSlots() {
-  const timeSlots = document.querySelectorAll('.time-slot');
+  const timeSlotsContainer = document.querySelector('.time-slots');
+  if (!timeSlotsContainer) return;
+  
+  const timeSlots = Array.from(timeSlotsContainer.children);
   
   timeSlots.forEach(slot => {
-    slot.classList.remove('selected');
-    
-    if (isTimeAvailable(activeDay, month, year, slot.textContent.trim())) {
-      slot.classList.remove('unavailable');
-    } else {
-      slot.classList.add('unavailable');
+    if (!isTimeAvailable(activeDay, month, year, slot.textContent.trim())) {
+      slot.remove(); // Elimina los horarios no disponibles
     }
   });
 }
+
+// Iniciar calendario
+initCalendario();
+
+// Si existe la estructura del primer script, inicializar también
+window.addEventListener('load', () => {
+  if (document.querySelector('.time-slots')) {
+    updateTimeSlots();
+  }
+});
 
 // Obtener día activo
 function getActiveDay(date) {
