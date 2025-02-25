@@ -86,7 +86,7 @@
 }
 
 h3 {
-    color: #647e92;
+    color: #BA6987;
     text-align: center;
     padding: 10px;
 }
@@ -104,11 +104,6 @@ p {
     /* Puedes cambiar "bold" por un valor numérico si quieres más control, por ejemplo, 600 o 700 */
 }
 
-.edad {
-    color: #647e92;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
 
 .perfil .estrellas {
     color: gold;
