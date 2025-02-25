@@ -8,8 +8,8 @@ fetch('http://localhost:8080/productos/listar') // Cambiado aquí: 'products.jso
         return response.json(); // Parsear el archivo JSON
     })
     .then(data => {////ejecuta despues de que una promesa ha sido resuelta
-        //console.log(data); 
-        //console.log(data[0].nombreProducto); 
+        ///console.log(data); 
+        ////console.log(data[0].nombreProducto); 
 
         const container = document.getElementById('container-yoga');
         if (!container) {
