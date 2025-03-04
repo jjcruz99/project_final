@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid #e9ecef;
+    margin-top: 30px;
 }
 
 .footer-content {
@@ -47,8 +48,8 @@
 }
 
 .footer-info-bottom {
-    font-size: 13px;
-    color: black;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
 }
 
 

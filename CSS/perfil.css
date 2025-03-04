@@ -1,3 +1,4 @@
+
 /* --------------- VARIABLES GLOBALES --------------- */
 
 :root {
@@ -85,7 +86,7 @@
 }
 
 h3 {
-    color: #647e92;
+    color: #BA6987;
     text-align: center;
     padding: 10px;
 }
@@ -96,18 +97,19 @@ p {
     padding: 10px;
 }
 
-.nombre {
-    color: #647e92;
+.perfil .nombre {
+    color: #BA6987;
     font-size: 24px;
     font-weight: bold;
+}
     /* Puedes cambiar "bold" por un valor numérico si quieres más control, por ejemplo, 600 o 700 */
+.tarea .nombre {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #647E92; /* Este es el color azul que ya tienes definido como --primary-color */
 }
 
-.edad {
-    color: #647e92;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
 
 .perfil .estrellas {
     color: gold;
@@ -141,7 +143,7 @@ p {
 .rectangulo {
     background-color: #fff;
     padding: 10px;
-    color: #647e92;
+    color: #BA6987;
     font-size: 24px;
     font-weight: bold;
     border-radius: var(--border-radius);
@@ -151,10 +153,9 @@ p {
 }
 
 .separador :hover {
-    border: 3px solid #647e92;
     width: 100%;
     color: #fff;
-    background-color: var(--Nav-Color);
+    background-color: rgb(186, 105, 135, 0.6);
 }
 
 
@@ -229,7 +230,8 @@ p {
 .tarea:hover {
     transform: translateY(-10px);
     /* Movimiento hacia arriba */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: rgb(199, 111, 145);
+    box-shadow: 0 8px 16px rgba(199, 111, 212, 0.8);
     /* Sombra más grande al hacer hover */
 }
 
@@ -348,6 +350,7 @@ p {
 .boton-agendar:hover {
     background-color: #bb6c93;
 }
+
 
 
 /* --------------- MEDIA QUERIES (RESPONSIVE) --------------- */
