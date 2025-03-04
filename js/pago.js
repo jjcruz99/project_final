@@ -54,7 +54,7 @@ function agregarArticulos() {
                                 const botonMas = document.createElement('button');
                                 botonMas.textContent = "+";
                                 botonMas.addEventListener('click',function () {
-                                  funAgregar(data[i].producto.id_producto);
+                                  funAgregar(data[i].producto.id_producto,data[i].producto.precio_unitario);
                                 });
                                 const botonMenos = document.createElement('button');
                                 botonMenos.textContent = "-";
@@ -121,7 +121,7 @@ function agregarArticulos() {
 }
 
 
-function funAgregar(id_producto){
+function funAgregar(id_producto,precio){
 
   notyf.success("Agregaste un articulo");
    //Guardar los productos en la base de datos entidad pedido
@@ -132,7 +132,7 @@ function funAgregar(id_producto){
    const pedido = {
        cantidad: 1,
        fecha_pedido: fecha,
-       precio_total: 0,
+       precio_total: precio,
        usuario: { id_usuario: 1 },
        producto: { id_producto: id_producto }///agregar el id del producto
    };
