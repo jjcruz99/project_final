@@ -8,15 +8,13 @@ fetch('http://localhost:8080/productos/listar') // Cambiado aquí: 'products.jso
         return response.json(); // Parsear el archivo JSON
     })
     .then(data => {////ejecuta despues de que una promesa ha sido resuelta
-        ///console.log(data); 
-        ////console.log(data[0].nombreProducto); 
-
+        
         const container = document.getElementById('container-yoga');
         if (!container) {
             console.error('El contenedor de productos no se encontró en el DOM.');
             return;
         }    
-        for (let i = 0; i <=3; i++) {
+        for (let i = 0; i <=3; i++) { 
         const productElement = document.createElement('div');
         productElement.classList.add('product');
                 productElement.innerHTML = `
@@ -123,7 +121,7 @@ function buyProduct(productName,referencia,imagen,precio,id_producto) {
             const pedido = {
                 cantidad: 1,
                 fecha_pedido: fecha,
-                precio_total: 0,
+                precio_total: precio,
                 usuario: { id_usuario: 1 },
                 producto: { id_producto: id_producto }///agregar el id del producto
             };

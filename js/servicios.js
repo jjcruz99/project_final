@@ -23,6 +23,7 @@ let activeDay = today.getDate();
 let month = today.getMonth();
 let year = today.getFullYear();
 
+
 // Array de meses
 const months = [
   "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
