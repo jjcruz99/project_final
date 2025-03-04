@@ -84,25 +84,44 @@
     display: flex;
     margin-top: 20px;
 }
-
 .containerBotones button {
-    margin-top: 20px;
+    margin: 10px 20px;
     width: 30px;
     height: 30px;
-    margin: 10px 20px 10px 20px;
     border-radius: 10px;
     text-align: center;
     border: 1px solid #B08EA2;
 }
 
-.container-botones-compra button {
-    width: 150px;
-    height: 80px;
-    margin: 40px 30px 40px 30px;
+.container-botones-compra {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin: 40px 30px;
     border-radius: 35px;
+}
+
+/* Common styles for both buttons */
+.btn-cancelar, .btn-pago {
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 150px;
+    border: 1px solid #927988;
     background-color: #AF6894;
-    border: 1px solid #B08EA2;
-    font-size: 20px;
+    color: white;
+}
+
+/* Hover effects for the "Pay" button */
+.btn-pago:hover {
+    background-color: #00ff22;
+    color: black;
+}
+
+/* Hover effects for the "Cancel" button */
+.btn-cancelar:hover {
+    background-color: #d60000;
 }
 
 #container-carro-vacio {
