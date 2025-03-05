@@ -180,7 +180,7 @@ function toggleDropdown() {
         // Alterna la visibilidad del botón de cerrar sesión
         logoutOption.style.display = logoutOption.style.display === 'block' ? 'none' : 'block';
     } else {
-        window.location.href = './inicioSecion.html'; // Redirige a la página de inicio de sesión
+        window.location.href = './inicioSesion.html'; // Redirige a la página de inicio de sesión
     }
 }
 
