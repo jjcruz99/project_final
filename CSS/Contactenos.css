@@ -1,0 +1,454 @@
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 26px;
+}
+
+
+/* CSS pagina contactenos */
+
+
+/* #FFFFFF-Blanco
+#7FD7E3-Azul Claro
+#70CAD1-Azul turquesa
+#90ACBA-Azul Grisáceo
+#B08EA2-Rosa Pastel Grisáceo */
+
+
+/* contenedor padre contine los dos contenedores hijos */
+
+.con-main-contactenos {
+    /* border: 1px solid black; */
+    margin: 10px 0px 0px 0px;
+    padding: 2px;
+    font-family: "Poppins", serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    backdrop-filter: blur(10px);
+    background-image: url(../img/img_contactenos/armonia.jpeg);
+    background-size: cover;  
+}
+
+/* contenedor hijo contactenos */
+
+.con-2 {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background:rgba(22, 22, 22, 0.85);   
+}
+
+
+/* contenedor hijo formulario */
+
+.con-3 {
+    padding: 20px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    background:rgba(22, 22, 22, 0.85);      
+}
+
+
+/* boton enviar */
+
+.Buttons-patusalud {
+    width: 170px;
+    height: 70px;
+    border-radius: 35px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    background: #FEA871;
+    border: 3px solid #AF6894;
+    opacity: 5;
+}
+
+.Buttons-patusalud:hover {
+    color: #000000;
+    background: #03ff6c;
+    border: 3px solid #03ff6c;
+
+};
+
+.titulos{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #AF6894;
+}
+
+.con-2 section {
+    margin: 30px;
+}
+
+.con-3 section {
+    margin: 40px;
+}
+.con-2 section p {
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+.con-redes-contactenos {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+}
+
+.con-img-redes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 30px 30px;
+    gap: 15px;
+}
+
+
+/* animación a las imágenes */
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.img-redes {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    animation: zoom 3s infinite;
+}
+
+
+/* campos del formulario */
+
+.inputDatos {
+    display: block;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-top: 10px;
+    width: 100%;
+    background: #af6894;
+    border: 1px solid #000000;
+}
+
+ ::placeholder {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 18px;
+}
+
+
+/* aliniea el boton a la derecha */
+
+.con-3-buttom {
+    display: flex;
+    justify-content: right;
+}
+
+
+/* Estilos para dispositivos extra pequeÃ±os (XS): Menos de 576px */
+
+@media (max-width: 575.98px) {
+    .titulos{
+        color: #AF6894;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .con-main-contactenos {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-content: center;
+        padding: 1px;
+        gap: 20px;
+        text-align: center;
+    }
+    .titulos {
+        font-family: "Poppins", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 35px;
+        text-align: center;
+    }
+    .con-2 {
+        width: 98%;  
+    }
+    .con-2 section {
+        margin-top: 10px;
+    }
+    .con-2 section p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .con-3 {
+        width: 98%;
+        text-align: center;
+        padding: 1px;
+    }
+    .con-3 section {
+        margin-top: 30px;
+    }
+    .con-3-form {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Buttons-patusalud {
+        width: 100px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .inputDatos {
+        width: 100%;
+        font-size: 16px;
+    }
+     ::placeholder {
+        color: #ffffff;
+        opacity: 1;
+        font-size: 16px;
+    }
+    .con-img-redes {
+        display: flex;
+        justify-content:center;
+        padding: 10px;
+        gap: 15px;
+    }
+    .iconos-contacto {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+    .img-redes {
+        width: 25px;
+        height: 25px;
+    }
+    
+}
+
+
+/* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .titulos{
+        color: #AF6894;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .con-main-contactenos {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 30px;
+    }
+    .con-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con-2 {
+        width: 95%;
+    }
+    .con-3 {
+        width: 95%;
+    }
+    .con-3-form {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+    .Buttons-patusalud {
+        width: 140px;
+        height: 60px;
+        font-size: 16px;
+    }
+    .iconos-contacto {
+        width: 40px;
+        height: 40px;
+    }
+    .iconos-contacto {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .img-redes {
+        width: 40px;
+        height: 40px;
+    }
+    .inputDatos {
+        font-size: 18px;
+        width: 100%;
+    }
+    ::placeholder {
+        font-size: 18px;
+    }
+}
+
+
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .titulos{
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #AF6894;
+    }
+    .con-main-contactenos {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 20px;
+    }
+    .con-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con-2 section p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .con-2 {
+        width: 95%;
+    }
+    .con-3 {
+        width: 95%;
+    }
+    .con-3-form {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+    .iconos-contacto {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+    .img-redes {
+        width: 40px;
+        height: 40px;
+    }
+    .inputDatos {
+        font-size: 20px;
+        width: 90%;
+    }
+    ::placeholder {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .titulos{
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: #AF6894;
+    }
+    .con-main-contactenos {
+        display: flex;
+        justify-content:space-between;
+    }
+    .con-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .img-redes {
+        width: 40px;
+        height: 40px;
+    }
+    .con-3 {
+        width: 50%;
+        padding: 1px;
+    }
+    .con-3-form {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-redes {
+        width: 30px;
+        height: 30px;
+    }
+    .con-info-contacto div {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .iconos-contacto {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .inputDatos {
+        font-size: 20px;
+    }
+    ::placeholder {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+
+@media (min-width: 1200px) {
+    .titulos{
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2.5rem;
+        color: #AF6894;
+    }
+    .img-redes {
+        width: 40px;
+        height: 40px;
+    }
+    .con-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con-2 section p {
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .con-info-contacto div {
+       display: flex;
+       justify-content: center; 
+    }   
+    .iconos-contacto {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+
+    .inputDatos {
+        font-size: 20px;
+    }
+    ::placeholder {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navegacion.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>PatuSalud</title>
+    <link rel="icon" type="image/x-icon" href="../img/Cerebro_Mesa de trabajo 1.png">
+    <!-- Font Awesome CDN (para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navBarra">
+        <!-- Logo -->
+        <div class="nav-brand">
+            <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
+        </div>
+
+        <!-- Botón de menú (icono hamburguesa) -->
+        <div class="nav-toggle" id="navToggle">
+            <img src="../img/f.png" alt="Menú" class="hamburger-icon">
+        </div>
+
+        <!-- Enlaces del menú -->
+        <div class="nav-links" id="navLinks">
+            <a href="../index.html" class="aBarra" id="inicio">Inicio</a>
+            <a href="#" class="aBarra" id="perfil">Perfil</a>
+            <a href="./servicios.html" class="aBarra" id="servicios">Citas</a>
+            <a href="./productos.html" class="aBarra" id="productos">Productos</a>
+            <a href="./nosotros.html" class="aBarra optionSelect" id="nosotros">Conócenos</a>
+            <a href="./pagos.html" class="aBarra" id="pagos">Pagos</a>
+            <a href="./contactenos.html" class="aBarra" id="contactanos">Contáctanos</a>
+            <a href="./inicioSesion.html" class="aBarra" id="aBarrauser">
+                <img src="../img/user2.png" class="IconUser" id="aBarrauser" alt="Icono de usuario">
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="contenido-principal">
+        <div class="contenedor-perfil">
+            <div class="caja-info">
+                <h3>Perfil Profesional</h3>
+                <p>El Dr. Juan Pérez, psicólogo clínico con más de 10 años de experiencia, se especializa en psicoterapia individual, de parejas, familiar, infantil y mindfulness. Su enfoque empático y personalizado busca el bienestar emocional de sus pacientes,
+                    creando un espacio seguro y confidencial para adolescentes, adultos y familias.</p>
+
+            </div>
+            <div class="perfil">
+                <div class="nombre">Dr. Juan Pérez</div>
+                <img src="../img/perfil/pro.avif" alt="Dr. Juan Pérez">
+                <div class="estrellas">★★★★★</div>
+            </div>
+            <div class="caja-info">
+                <h3>DESCRIPCIÓN DE LA PERSONA</h3>
+                <p>El Dr. Pérez ofrece un enfoque cálido y accesible, adaptando su terapia a las necesidades de cada paciente. Combina psicoterapia cognitivo-conductual, terapia de pareja y mindfulness para reducir el estrés. Especializado en salud mental
+                    infantil, su misión es ayudar a todos, independientemente de su edad o situación, a comprender sus emociones y lograr un equilibrio en su vida.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="separador">
+        <div class="rectangulo">
+            Servicios Personalizados para Tu Bienestar Emocional
+        </div>
+
+    </div>
+    <div class="carrusel">
+        <button class="flecha izquierda" onclick="moverCarrusel('izquierda')">&#10094;</button>
+
+        <div class="tareas">
+            <!-- Servicio 1 -->
+            <div class="tarea">
+                <img src="../img/perfil/terapia-individual.jpg" alt="Psicoterapia Individual">
+                <div class="nombre">Psicoterapia Individual</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal1')">Saber más</a>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="tarea">
+                <img src="../img/perfil/parejas.jpg" alt="Psicoterapia de Parejas">
+                <div class="nombre">Psicoterapia de Parejas</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal2')">Saber más</a>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="tarea">
+                <img src="../img/perfil/familiar.avif" alt="Terapia Familiar">
+                <div class="nombre">Terapia Familiar</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal3')">Saber más</a>
+            </div>
+            <!-- Servicio 4 -->
+            <div class="tarea">
+                <img src="../img/perfil/evsp.jpg" alt="Evaluación Psicológica">
+                <div class="nombre">Evaluación Psicológica</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal4')">Saber más</a>
+            </div>
+            <!-- Servicio 5 -->
+            <div class="tarea">
+                <img src="../img/perfil/parejas.jpg" alt="Terapia en Línea">
+                <div class="nombre">Terapia en Línea</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal5')">Saber más</a>
+            </div>
+            <!-- Servicio 6 -->
+            <div class="tarea">
+                <img src="../img/perfil/ti.jpg" alt="Terapia Infantil">
+                <div class="nombre">Terapia Infantil</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal6')">Saber más</a>
+            </div>
+            <!-- Servicio 7 -->
+            <div class="tarea">
+                <img src="../img/perfil/estres.jpg" alt="Mindfulness y Reducción de Estrés">
+                <div class="nombre">Mindfulness y Reducción de Estrés</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal7')">Saber más</a>
+            </div>
+            <!-- Servicio 8 -->
+            <div class="tarea">
+                <img src="../img/perfil/c.jpg" alt="Coaching Psicológico">
+                <div class="nombre">Coaching Psicológico</div>
+                <a href="#" class="boton" onclick="mostrarModal('modal8')">Saber más</a>
+            </div>
+        </div>
+
+        <button class="flecha derecha" onclick="moverCarrusel('derecha')">&#10095;</button>
+    </div>
+
+
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+            <h3>Psicoterapia Individual</h3>
+            <p>La psicoterapia individual está dirigida a personas que necesitan un espacio para tratar diversos problemas emocionales. En este tratamiento se abordan temas como:</p>
+            <ul>
+                <li>Ansiedad</li>
+                <li>Estrés</li>
+                <li>Depresión</li>
+                <li>Conflictos internos y externos</li>
+            </ul>
+            <p>El proceso es personalizado, permitiendo un trabajo profundo sobre las emociones, conductas y pensamientos de la persona. Las sesiones son confidenciales y se adaptan a las necesidades de cada individuo.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+            <h3>Psicoterapia de Parejas</h3>
+            <p>La psicoterapia de parejas tiene como objetivo ayudar a mejorar la comunicación y la resolución de conflictos entre los miembros de la pareja. Algunos de los temas que tratamos incluyen:</p>
+            <ul>
+                <li>Problemas de comunicación</li>
+                <li>Conflictos en la relación</li>
+                <li>Desconfianza</li>
+                <li>Falta de intimidad</li>
+            </ul>
+            <p>El enfoque se basa en escuchar a cada miembro de la pareja, entender sus necesidades y establecer nuevas formas de interacción y resolución de problemas.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+            <h3>Terapia Familiar</h3>
+            <p>La terapia familiar es útil cuando existen conflictos dentro del hogar que afectan el bienestar de los miembros de la familia. Esta terapia aborda:</p>
+            <ul>
+                <li>Conflictos entre padres e hijos</li>
+                <li>La dinámica de la familia</li>
+                <li>La mejora en la comunicación familiar</li>
+                <li>La resolución de conflictos de convivencia</li>
+            </ul>
+            <p>El objetivo es mejorar la convivencia y establecer nuevas estrategias para que todos los miembros de la familia se comprendan mejor.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal4')">&times;</span>
+            <h3>Evaluación Psicológica</h3>
+            <p>La evaluación psicológica incluye diversas pruebas y métodos para valorar diferentes aspectos del funcionamiento psicológico. Esto incluye:</p>
+            <ul>
+                <li>Evaluación de la personalidad</li>
+                <li>Detección de trastornos emocionales</li>
+                <li>Pruebas psicométricas</li>
+            </ul>
+            <p>Este proceso nos ayuda a obtener un diagnóstico claro y a definir el tratamiento adecuado para cada caso.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal5')">&times;</span>
+            <h3>Terapia en Línea</h3>
+            <p>Si no puedes asistir a sesiones presenciales, ofrecemos terapia en línea para brindar ayuda psicológica a distancia, con total confidencialidad. Puedes acceder a:</p>
+            <ul>
+                <li>Sesiones de psicoterapia desde tu hogar</li>
+                <li>Consultas por videollamada o chat</li>
+                <li>Flexible según tu horario</li>
+            </ul>
+            <p>Este servicio está diseñado para quienes prefieren la comodidad de recibir atención sin desplazarse.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal6')">&times;</span>
+            <h3>Terapia Infantil</h3>
+            <p>La terapia infantil está diseñada para ayudar a los niños a enfrentar sus emociones, miedos, y desarrollar habilidades para mejorar su bienestar emocional. Algunos de los problemas que tratamos incluyen:</p>
+            <ul>
+                <li>Trastornos emocionales como ansiedad o tristeza</li>
+                <li>Problemas de comportamiento</li>
+                <li>Dificultades en la adaptación escolar o social</li>
+            </ul>
+            <p>El tratamiento es adaptado a la edad y necesidades del niño, y generalmente incluye técnicas de juego y terapia cognitivo-conductual.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div id="modal7" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal7')">&times;</span>
+            <h3>Mindfulness y Reducción de Estrés</h3>
+            <p>La terapia de mindfulness es ideal para quienes buscan reducir el estrés, la ansiedad y mejorar su bienestar general. En estas sesiones aprenderás:</p>
+            <ul>
+                <li>Técnicas de respiración y meditación</li>
+                <li>Cómo ser más consciente de tus emociones y pensamientos</li>
+                <li>Ejercicios prácticos para reducir la ansiedad</li>
+            </ul>
+            <p>Este enfoque es altamente efectivo para quienes desean llevar una vida más equilibrada y tranquila.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div id="modal8" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal8')">&times;</span>
+            <h3>Coaching Psicológico</h3>
+            <p>El coaching psicológico es una excelente herramienta para quienes desean alcanzar sus metas personales, mejorar su rendimiento y encontrar un equilibrio emocional. Durante las sesiones:</p>
+            <ul>
+                <li>Trabajamos en tus metas y objetivos personales</li>
+                <li>Aprendes técnicas para superar obstáculos</li>
+                <li>Mejoras tu bienestar emocional y físico</li>
+            </ul>
+            <p>El coaching se adapta a tus necesidades y circunstancias, ayudándote a desarrollarte como persona y a maximizar tu potencial.</p>
+            <a href="../html/servicios.html" class="boton-agendar">Agendar Cita</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+            </div>
+
+            <!-- Información del footer: email, teléfono, ubicación -->
+            <div class="footer-info">
+                <div class="footer-info-top">
+                    <p>Email: patusalud@gmail.com | Teléfono: (+57) 320-458-1234 | Ubicación: Medellín, Antioquia</p>
+                </div>
+                <div class="footer-info-bottom">
+                    <p>&copy; 2025 Patu Salud.</p>
+                </div>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/1234567898" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/inicioSecion.js"></script>
+    <script src="../js/perfil.js"></script>
+
+
+</body>
+
+</html>

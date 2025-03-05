@@ -1,0 +1,96 @@
+.container-text-center{
+    background-image: linear-gradient(rgb(112, 202, 209, 0.5), rgba(210, 160, 229, 0.5)), url("../img/Pictures_Inicio/patubanner.png");
+
+}
+
+/* Footer */
+
+
+.servicios{
+    margin-top: 40px;
+}
+
+
+
+/* Bonton de ayuda */
+
+.floating-help {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.help-button {
+    background-color: #00ffea;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.help-button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Estilos para dispositivos extra pequeños (XS): Menos de 576px */
+
+@media (max-width: 575.98px) {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .purpose-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Estilos para dispositivos pequeños (S): 576px a 767px */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .purpose-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+
+@media (min-width: 1200px) {}

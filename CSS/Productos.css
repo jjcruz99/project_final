@@ -1,0 +1,243 @@
+/* --------------- RESET Y GLOBAL --------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+
+/* --------------- VARIABLES GLOBALES --------------- */
+
+ :root {
+    --primary-color: #647E92;
+    --Nav-Color: #AF6894;
+    --secondary-color: #455970;
+    --background-color: #b08ea21e;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --spacing-base: 1rem;
+    --border-radius: 10px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --help-button-color: #7FD7E3;
+}
+
+
+/* --------------- FUENTES --------------- */
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 26px;
+}
+
+/* Estilos para el carrito de compras */
+.container-carro{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin-top: 100px; 
+}
+
+.carrito {
+    background-color: #AF6894;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.carrito-icono {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.carrito-conteo {
+    font-size: 1.2em;
+}
+
+h1 {
+    background-color: #ffffff;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #AF6894;
+    margin: 20px 0;
+}
+ /* css alerta perzonalizada */
+.custom-alert {
+    position: fixed;
+    top: 140px;
+    right: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+#container-yoga{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content:center;
+}
+#container-ejercicio{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+#container-varios{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.product {
+    width: 250px;
+    padding: 20px 10px 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.product img {
+    max-width: 90%;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    max-height: 200px;
+
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    margin-top: 5px;
+    padding: 5px 7px 5px 7px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    padding: 5px 7px 10px 7px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    padding: 5px 7px 5px 7px;
+    margin-top: auto;
+}
+
+.quantity {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.buy-button {
+    margin-top: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #AF6894;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.buy-button:hover {
+    background-color: #dfa5c9;
+}
+
+/* Footer */
+
+
+
+
+
+
+/* Estilos para dispositivos extra pequeÃ±os (XS): Menos de 576px */
+@media (max-width: 575.98px) {
+   
+    h1 {
+        background-color: #ffffff;
+        padding-top: 25px;
+        text-align: center;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 20px;
+        
+    }
+}
+
+/* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    h1 {
+        background-color: #ffffff;
+        padding-top: 35px;
+        text-align: center;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 20px;
+        
+    }
+
+}
+
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+@media (min-width: 1200px) {
+
+}

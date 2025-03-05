@@ -1,0 +1,287 @@
+/* Contenedor principal */
+ 
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+ 
+}
+ 
+ 
+/* Lado izquierdo */
+ 
+.left-side {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+ 
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 5s ease-in-out;
+}
+ 
+.left-side:hover .image {
+    transform: scale(1.1);
+}
+ 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6));
+}
+ 
+.text-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: var(--text-color);
+    text-align: left;
+    z-index: 2;
+}
+ 
+.text-overlay h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+ 
+.text-overlay p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+ 
+ 
+/* Lado derecho */
+ 
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 90%;
+    max-width: 400px;
+}
+ 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.card-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ 
+.card-description {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+ 
+.input-group {
+    margin-bottom: 0;
+}
+ 
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+ 
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: var(--help-button-color);
+}
+ 
+ 
+/* Modo oscuro */
+ 
+body.dark {
+    background-color: var(--secondary-color);
+    color: white;
+}
+ 
+body.dark .card {
+    background-color: var(--secondary-color);
+}
+ 
+body.dark .text-overlay {
+    color: var(--text-color);
+}
+ 
+ 
+/* Cambiar posición cuando se registre */
+ 
+.container.registered {
+    flex-direction: row-reverse;
+}
+ 
+ 
+/* Barra de fuerza de contraseña */
+ 
+.password-strength {
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+ 
+.strength-weak {
+    background-color: red;
+}
+ 
+.strength-medium {
+    background-color: blue;
+}
+ 
+.strength-strong {
+    background-color: green;
+}
+ 
+ 
+/* Botón de modo oscuro */
+ 
+.dark-mode-button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+ 
+.dark-mode-button:hover {
+    background-color: var(--help-button-color);
+}
+ 
+.card-header {
+    position: relative;
+}
+ 
+.dark-mode-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.error-message {
+    color: red;
+    display: none;
+    margin-top: 0.5rem;
+}
+ 
+.alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+ 
+.alert.success {
+    background-color: #38a169;
+    color: white;
+}
+ 
+.alert.error {
+    background-color: #e53e3e;
+    color: white;
+}
+ 
+.password-container {
+    position: relative;
+}
+ 
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+ 
+@media (max-width: 768px) {
+    .left-side,
+    .right-side {
+        width: 100%;
+        height: auto;
+    }
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
+    .text-overlay p {
+        font-size: 1rem;
+    }
+    .card {
+        width: 80%;
+        padding: 1.5rem;
+    }
+    .card-header h2 {
+        font-size: 1.25rem;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .text-overlay h2 {
+        font-size: 1.2rem;
+    }
+    .text-overlay p {
+        font-size: 0.9rem;
+    }
+    .card {
+        width: 90%;
+    }
+    .card-header h2 {
+        font-size: 1rem;
+    }
+    .dark-mode-button {
+        width: 35px;
+        height: 35px;
+    }
+}

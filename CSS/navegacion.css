@@ -1,0 +1,344 @@
+/* --------------- RESET Y GLOBAL --------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* --------------- VARIABLES GLOBALES --------------- */
+
+:root {
+    --primary-color: #647E92;
+    --Nav-Color: #AF6894;
+    --secondary-color: #455970;
+    --background-color: #b08ea21e;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --spacing-base: 1rem;
+    --border-radius: 10px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --help-button-color: #7FD7E3;
+}
+
+
+/* --------------- FUENTES --------------- */
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 50;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 26px;
+}
+
+
+/* --------------- NAVBAR Y NAVIGATION --------------- */
+
+.navBarra {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #AF6894;
+    background: linear-gradient(45deg, #af6894, #db758f, #ffaa71, #fc8b81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo */
+
+.logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px;
+    object-fit: contain;
+}
+
+
+/* Enlaces del Navbar */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+/* Estilo base de los enlaces */
+
+.aBarra {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+}
+
+
+/* Hover en los enlaces */
+
+.aBarra:hover {
+    background-color: white;
+    color: #B08EA2;
+    transform: scale(1.1);
+}
+
+
+/* Página activa - Fondo blanco y texto oscuro */
+
+.aBarra.active {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    background-color: white;
+    color: #B08EA2;
+}
+
+
+/* Icono de usuario */
+
+.IconUser {
+    margin-top: 5px;
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    /* Convierte la imagen a blanco */
+}
+
+
+/* Hover del icono de usuario */
+
+.IconUser:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+
+/* --------------- Botón de menú mejorado para móviles --------------- */
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+
+/* Icono de hamburguesa */
+
+.hamburger-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+
+/* Animación cuando el menú está abierto (cuando la clase "active" se agrega) */
+
+.nav-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger::before {
+    top: -10px;
+}
+
+.hamburger::after {
+    bottom: -10px;
+}
+
+
+/* Estilo para el contenedor del dropdown */
+
+.user-dropdown {
+    position: relative;
+    /* Necesario para posicionar el dropdown */
+}
+
+
+/* Estilo para la imagen del usuario */
+
+.IconUser {
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    display: block;
+    /* Asegura que no haya espacio adicional */
+    width: 40px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 40px;
+    /* Ajusta el tamaño según sea necesario */
+    object-fit: cover;
+    /* Asegura que la imagen se recorte para ajustarse al contenedor */
+    border-radius: 50%;
+    /* Hace que la imagen sea redonda */
+    filter: none;
+    /* Asegura que la imagen se muestre correctamente */
+}
+
+
+/* Estilo para la opción de cerrar sesión */
+
+.logout-dropdown {
+    position: absolute;
+    /* Posiciona el dropdown de forma absoluta */
+    top: 50px;
+    /* Ajusta la posición hacia abajo */
+    right: 0;
+    /* Alinea a la derecha */
+    background-color: var(--card-background);
+    /* Color de fondo del dropdown */
+    box-shadow: var(--shadow);
+    /* Añade sombra */
+    border-radius: var(--border-radius);
+    /* Redondea las esquinas */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    display: none;
+    /* Inicialmente oculto */
+}
+
+
+/* Estilo para el botón de cerrar sesión */
+
+.logout-button {
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none;
+    /* Sin borde */
+    color: var(--text-color);
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+}
+
+
+/* Hover sobre el botón de cerrar sesión */
+
+.logout-button:hover {
+    background-color: var(--primary-color);
+    /* Cambia el fondo al pasar el ratón */
+    color: white;
+    /* Cambia el color del texto al blanco */
+}
+
+
+/* Ajustes para responsive */
+
+@media (max-width: 768px) {
+    .navBarra {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+    .nav-brand {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav-toggle {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .nav-links {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        background-color: var(--Nav-Color);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        display: none;
+        z-index: 999;
+        gap: 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .aBarra {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+    #activePage {
+        display: none !important;
+    }
+    /* --------------- Modificación para centrar el icono de usuario en pantallas pequeñas --------------- */
+    .navBarra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Para pantallas pequeñas, centrar el icono de usuario */
+    .IconUser {
+        margin-top: 0;
+        /* Elimina el margen superior */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        /* Asegura que el icono esté centrado */
+    }
+    /* Opcional: Si quieres centrar el menú de navegación cuando se hace responsive */
+    .nav-links {
+        text-align: center;
+    }
+}

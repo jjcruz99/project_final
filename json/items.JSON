@@ -1,0 +1,99 @@
+{
+    "items": [{
+            "name": "Mats de yoga",
+            "img": "https://sanisidrolonasar.vtexassets.com/arquivos/ids/157509-800-auto?v=637645485170970000&width=800&height=auto&aspect=true",
+            "description": "antideslizantes, ecológicos, gruesos, de viaje",
+            "precio": "76.500",
+            "cantidad": 10,
+            "referencia": 1000
+        },
+        {
+            "name": "Bloques de yoga",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_698449-MCO79483193632_102024-F.webp",
+            "description": "Bloque en espuma máximo confort",
+            "precio": "25.990",
+            "cantidad": 10,
+            "referencia": 1001
+        },
+        {
+            "name": "Cinturones de yoga",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_703884-CBT53971320157_022023-F.webp",
+            "description": "Para mejorar la flexibilidad y las posturas",
+            "precio": "99.908",
+            "cantidad": 10,
+            "referencia": 1002
+        },
+        {
+            "name": "Toallas antideslizantes",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_719791-CBT75865046604_042024-F.webp",
+            "description": "Ideales para hot yoga o prácticas intensas",
+            "precio": "134.000",
+            "cantidad": 10,
+            "referencia": 1003
+        },
+        {
+            "name": "Cuerdas con contador de saltos",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_773055-MLU72821422833_112023-F.webp",
+            "description": "Cuerda para saltar",
+            "precio": "120.000",
+            "cantidad": 10,
+            "referencia": 1004
+        },
+        {
+            "name": "Step aeróbico",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_688844-MLU78042982993_072024-F.webp",
+            "description": "Step graduable",
+            "precio": "100.000",
+            "cantidad": 10,
+            "referencia": 1005
+        },
+        {
+            "name": "Mancuernas ajustables",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_777274-MCO77416833165_072024-F.webp",
+            "description": "Mancuernas con discos ajustables",
+            "precio": "173.000",
+            "cantidad": 10,
+            "referencia": 1006
+        },
+        {
+            "name": "Pesa rusa",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_878000-MCO76758005007_052024-F.webp",
+            "description": "Mancuernas",
+            "precio": "130.000",
+            "cantidad": 10,
+            "referencia": 1007
+        },
+        {
+            "name": "Difusores",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_945007-MCO79604865176_102024-F.webp",
+            "description": "Difusores aromatizar para el ambiente",
+            "precio": "293.000",
+            "cantidad": 10,
+            "referencia": 1008
+        },
+        {
+            "name": "Aceites esenciales",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_641157-MLU75760879157_042024-F.webp",
+            "description": "Aceites para aromaterapia",
+            "precio": "83.000",
+            "cantidad": 10,
+            "referencia": 1009
+        },
+        {
+            "name": "Omega 3",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_859986-MLA76200796666_052024-F.webp",
+            "description": "Suplemento",
+            "precio": "105.000",
+            "cantidad": 10,
+            "referencia": 1010
+        },
+        {
+            "name": "Velas aromáticas",
+            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_688223-MCO79579552278_102024-F.webp",
+            "description": "Fragancias calmantes como lavanda o eucalipto",
+            "precio": "38.000",
+            "cantidad": 10,
+            "referencia": 1011
+        }
+    ]
+}

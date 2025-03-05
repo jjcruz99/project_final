@@ -1,0 +1,245 @@
+* {
+    font-family: 'Poppins', 'sans serif';
+}
+
+
+/* css carrito */
+
+.container-principal {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.conatiner-articulos {
+    width: 48%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.conatiner-compras {
+    width: 48%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.sub-titulos {
+    color: #B08EA2;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container-cards {
+    border: 1px solid rgba(169, 161, 161, 0.285);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    margin: 30px;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    gap: 40px;
+}
+
+.container-imagen {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-detalles {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* css referencia precio */
+
+.container-detalles p {
+    text-align: left;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container-imagen img {
+    width: 150px;
+    height: 150px;
+}
+
+
+/* contenedor botones + y - */
+
+.containerBotones {
+    display: flex;
+    margin-top: 20px;
+}
+
+.containerBotones button {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #B08EA2;
+}
+
+.container-botones-compra button {
+    width: 150px;
+    height: 80px;
+    margin: 40px 30px 40px 30px;
+    border-radius: 35px;
+    background-color: #AF6894;
+    border: 1px solid #B08EA2;
+    font-size: 20px;
+}
+
+#container-carro-vacio {
+    margin-top: 100px;
+    background-color: #7fd7e3;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#container-carro-vacio p {
+    font-size: 26px;
+}
+
+.icono-regalo {
+    font-size: 50px;
+}
+
+.container-total-compra {
+    margin-top: 30px;
+    border-top: 2px solid #B08EA2;
+}
+
+.container-total-compra p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.img-payu {
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 80px;
+    max-height: 50px;
+    border-radius: 10px;
+}
+
+.btn-pago {
+    max-height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para dispositivos extra grandes (XL): 1200px en adelante */
+
+@media (min-width: 1200px) {}
+
+
+/* Estilos para dispositivos grandes (L): 992px a 1199px */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/* Estilos para dispositivos medianos (M): 768px a 991px */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container-principal {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .conatiner-articulos {
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .conatiner-compras {
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .container-cards {
+        border: 1px solid rgb(240, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+        gap: 80px;
+    }
+}
+
+
+/* Estilos para dispositivos pequeÃ±os (S): 576px a 767px */
+
+@media (max-width: 767.98px) {
+    * {
+        font-size: 20px;
+    }
+    .container-principal {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+    }
+    .conatiner-articulos {
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .conatiner-compras {
+        width: 90%;
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .container-cards {
+        border: 1px solid rgb(240, 235, 235);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px 20px 20px;
+        gap: 80px;
+    }
+}
+
+
+/* ccs conatiner-compras padre */
+
+
+/* css carrito */

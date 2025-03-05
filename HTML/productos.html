@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="../css/navegacion.css">
+    <link rel="stylesheet" href="../css/Productos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- Tipos de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <title>PatuSalud</title>
+    <link rel="icon" type="image/x-icon" href="../img/Cerebro_Mesa de trabajo 1.png">
+    <!-- Font Awesome CDN (para íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="navBarra">
+        <!-- Logo -->
+        <div class="nav-brand">
+            <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Logo Patu Salud" class="logo">
+        </div>
+
+        <!-- Botón de menú (icono hamburguesa) -->
+        <div class="nav-toggle" id="navToggle">
+            <img src="../img/f.png" alt="Menú" class="hamburger-icon">
+        </div>
+
+        <!-- Enlaces del menú -->
+        <div class="nav-links" id="navLinks">
+            <a href="../index.html" class="aBarra" id="inicio">Inicio</a>
+            <a href="./perfil.html" class="aBarra" id="perfil">Perfil</a>
+            <a href="./servicios.html" class="aBarra" id="servicios">Citas</a>
+            <a href="#" class="aBarra" id="productos">Productos</a>
+            <a href="./nosotros.html" class="aBarra optionSelect" id="nosotros">Conócenos</a>
+            <a href="./pagos.html" class="aBarra" id="pagos">Pagos</a>
+            <a href="./contactenos.html" class="aBarra" id="contactanos">Contáctanos</a>
+            <a href="./inicioSesion.html" class="aBarrauser" id="aBarrauser">
+                <img src="../img/user2.png" class="IconUser" id="aBarrauser" alt="Icono de usuario">
+            </a>
+        </div>
+    </nav>
+
+    <p id="miAlerta" class="custom-alert">¡Has agregado un articulo!</p>
+    <p id="miAlerta2" class="custom-alert">Click para ir al carrito </p>
+    <section class="container-carro">
+        <div class="carrito">
+            <span class="carrito-icono">🛒</span>
+            <span class="carrito-conteo " id="Conteocarro">0</span>
+        </div>
+        <div id="con-mostrar-carro"> </div>
+
+    </section>
+
+    <h1> Yoga</h1>
+    <div id="container-yoga" class="row"></div>
+    <h1> Ejercicio </h1>
+    <div id="container-ejercicio" class="row"></div>
+    <h1> Varios </h1>
+    <div id="container-varios" class="row"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="../img/logo patu salud horizontal_Mesa de trabajo 1.png" alt="Patu Salud Logo" class="footer-logo-img">
+            </div>
+
+            <!-- Información del footer: email, teléfono, ubicación -->
+            <div class="footer-info">
+                <div class="footer-info-top">
+                    <p>Email: patusalud@gmail.com | Teléfono: (+57) 320-458-1234 | Ubicación: Medellín, Antioquia</p>
+                </div>
+                <div class="footer-info-bottom">
+                    <p>&copy; 2025 Patu Salud.</p>
+                </div>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/1234567898" target="_blank" class="footer-social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Archivos JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/productos.js"></script>
+    <script src="../js/inicioSecion.js"></script>
+</body>
+
+</html>
